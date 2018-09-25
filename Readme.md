@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Титова](https://up.htmlacademy.ru/adaptive/15/user/146892).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мишагин](https://up.htmlacademy.ru/adaptive/15/user/118967).
 
 ---
 
