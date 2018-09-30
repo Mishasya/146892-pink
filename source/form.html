@@ -5,8 +5,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <header class="header-form">
+    <header class="header header-form">
       <nav class="main-nav">
         <a class="logo">
           <img class="logo__img" src="#" alt="Pink">
@@ -30,17 +29,18 @@
         </ul>
       </nav>
 
-      <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="header__title header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
     <main class="main-form">
       <section class="contest">
-        <div class="promo">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</div>
+        <h2 class="visually-hidden">Шанс выиграть приз</h2>
+        <div class="promo promo--form-size">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</div>
 
         <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
 
           <fieldset class="initials">
-            <div class"surname">
+            <div class="surname">
               <label class="surname__label" for="user-surname">Фамилия:</label>
               <input class="surname__input" type="text" id="user-surname" placeholder="Укажите фамилию *">
             </div>
@@ -158,9 +158,9 @@
       </section>
     </main>
 
-    <footer class="footer footer-form">
-      <a class="logo-form" href="index.html">
-        <img class="logo-form__img" src="#" alt="Pink">
+    <footer class="footer">
+      <a class="logo" href="index.html">
+        <img class="logo__img logo__img--glasses" src="#" alt="Pink">
       </a>
 
       <ul class="social-list">
@@ -183,7 +183,7 @@
 
       <div class="footer__development">
         <p class="footer__developer">Разработано</p>
-        <a class="footer__link-htmlacademy" href="#"></a>
+        <a class="footer__link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </div>
     </footer>
 
