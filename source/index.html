@@ -5,18 +5,16 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="header header-index">
+    <header class="page-header header--index">
       <h1 class="visually-hidden">Приложение Pink</h1>
       <nav class="main-nav">
         <a class="logo">
           <img class="logo__img" src="#" alt="Pink">
         </a>
-        <button class="main-nav__trigger" type="button" aria-label="Главное меню">
-          <span class="main-nav__hamburger"></span>
-        </button>
-        <ul class="nav-list">
+        <button class="main-nav__trigger" type="button" aria-label="Главное меню"></button>
+        <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Главная</a>
+            <a class="nav-list__link">Главная</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Фотографии</a>
@@ -40,85 +38,91 @@
       </section>
     </header>
 
-    <main class="main-index">
+    <main class="page-main page-main--index">
       <section class="information">
         <h2 class="visually-hidden">Информация о приложении</h2>
         <p class="information__text">Устали от серости мегаполиса?</p>
         <p class="information__text">Нам есть, что вам  предложить!</p>
-        <ul class="information-list">
-          <li class="information-list__item">
-            <h3 class="information-list__title">Поднимает настроение</h3>
-            <p class="information-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <ul class="information__list list-info">
+          <li class="list-info__item">
+            <h3 class="list-info__title">Поднимает настроение</h3>
+            <p class="list-info__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="information-list__item">
-            <h3 class="information-list__title">Меняет мир вокруг</h3>
-            <p class="information-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="list-info__item">
+            <h3 class="list-info__title">Меняет мир вокруг</h3>
+            <p class="list-info__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="information-list__item">
-            <h3 class="information-list__title">Заводит новых друзей</h3>
-            <p class="information-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="slider-review">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <div class="slider-review__controls">
-          <i class="slider-review__toggle slider-review__toggle--active"></i>
-          <i class="slider-review__toggle"></i>
-          <i class="slider-review__toggle"></i>
-        </div>
-        <ul class="review-list">
-          <li class="review-list__item">
-            <blockquote class="review-list__quote">
-              <cite class="review-list__autor">Николай Петров</cite>
-              <p class="review-list__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-            </blockquote>
-          </li>
-          <li class="review-list__item">
-            <blockquote class="review-list__quote">
-              <cite class="review-list__autor">Николай Петров</cite>
-              <p class="review-list__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-            </blockquote>
-          </li>
-          <li class="review-list__item">
-            <blockquote class="review-list__quote">
-              <cite class="review-list__autor">Николай Петров</cite>
-              <p class="review-list__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
-            </blockquote>
+          <li class="list-info__item">
+            <h3 class="list-info__title">Заводит новых друзей</h3>
+            <p class="list-info__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
       </section>
 
-      <section class="slider-price">
-        <h2 class="visually-hidden">Тарифы и цены</h2>
-        <div class="slider-price__controls">
-          <i class="slider-price__toggle"></i>
-          <i class="slider-price__toggle slider-price__toggle--active"></i>
-          <i class="slider-price__toggle"></i>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviews__list slider__list">
+            <li class="review-list__item slider__item">
+              <blockquote class="review-list__quote">
+                <cite class="review-list__autor">Николай Петров</cite>
+                <p class="review-list__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              </blockquote>
+            </li>
+            <li class="review-list__item slider__item">
+              <blockquote class="review-list__quote">
+                <cite class="review-list__autor">Николай Петров</cite>
+                <p class="review-list__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              </blockquote>
+            </li>
+            <li class="review-list__item slider__item">
+              <blockquote class="review-list__quote">
+                <cite class="review-list__autor">Николай Петров</cite>
+                <p class="review-list__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              </blockquote>
+            </li>
+          </ul>
+
+          <div class="reviews__controls slider__controls">
+            <button class="slider__toggle slider__toggle--active"></button>
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle"></button>
+          </div>
         </div>
-        <table class="slider-table">
-          <tr class="slider-table__row">
-            <th class="slider-table__title">Стандарт<span class="slider-table__price">3.99 usd</span></th>
-            <th class="slider-table__title">База<span class="slider-table__price">1.99 usd</span></th>
-            <th class="slider-table__title">Анлим<span class="slider-table__price">9.99 usd</span></th>
-          </tr>
-          <tr class="slider-table__row">
-            <td class="slider-table__desc">Розовый фильтр</td>
-            <td class="slider-table__desc">Розовый фильтр</td>
-            <td class="slider-table__desc">Розовый фильтр</td>
-          </tr>
-          <tr class="slider-table__row">
-            <td class="slider-table__desc">Смайлики</td>
-            <td class="slider-table__desc">Смайлики</td>
-            <td class="slider-table__desc">Смайлики</td>
-          </tr>
-          <tr class="slider-table__row">
-            <td class="slider-table__desc">Комментарии</td>
-            <td class="slider-table__desc">Комментарии</td>
-            <td class="slider-table__desc">Комментарии</td>
-          </tr>
-        </table>
+      </section>
+
+      <section class="price">
+        <div class="price__wrapper slider">
+          <h2 class="visually-hidden">Тарифы и цены</h2>
+          <table class="price__table">
+            <tr class="price__table__row">
+              <th class="price__table__title">Стандарт<span class="price-table__price">3.99 usd</span></th>
+              <th class="price__table__title">База<span class="price-table__price">1.99 usd</span></th>
+              <th class="price__table__title">Анлим<span class="price-table__price">9.99 usd</span></th>
+            </tr>
+            <tr class="price__table__row">
+              <td class="price__table__desc">Розовый фильтр</td>
+              <td class="price__table__desc">Розовый фильтр</td>
+              <td class="price__table__desc">Розовый фильтр</td>
+            </tr>
+            <tr class="price__table__row">
+              <td class="price__table__desc">Смайлики</td>
+              <td class="price__table__desc">Смайлики</td>
+              <td class="price__table__desc">Смайлики</td>
+            </tr>
+            <tr class="price__table__row">
+              <td class="price__table__desc">Комментарии</td>
+              <td class="price__table__desc">Комментарии</td>
+              <td class="price__table__desc">Комментарии</td>
+            </tr>
+          </table>
+
+          <div class="price__controls slider__controls">
+            <button class="slider__toggle"></button>
+            <button class="slider__toggle slider__toggle--active"></button>
+            <button class="slider__toggle"></button>
+          </div>
+        </div>
       </section>
 
       <section class="contacts">

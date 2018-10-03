@@ -5,15 +5,13 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="header header-form">
+    <header class="page-header header--form">
       <nav class="main-nav">
         <a class="logo">
           <img class="logo__img" src="#" alt="Pink">
         </a>
-        <button class="main-nav__trigger" type="button" aria-label="Главное меню">
-          <span class="main-nav__hamburger"></span>
-        </button>
-        <ul class="nav-list">
+        <button class="main-nav__trigger" type="button" aria-label="Главное меню"></button>
+        <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Главная</a>
           </li>
@@ -32,121 +30,121 @@
       <h1 class="header__title header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
-    <main class="main-form">
+    <main class="page-main page-main--form">
       <section class="contest">
         <h2 class="visually-hidden">Шанс выиграть приз</h2>
         <div class="promo promo--form-size">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</div>
 
         <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="initials">
-            <div class="surname">
-              <label class="surname__label" for="user-surname">Фамилия:</label>
-              <input class="surname__input" type="text" id="user-surname" placeholder="Укажите фамилию *">
+          <fieldset class="form-contest__part">
+            <div class="form-contest__inner">
+              <label class="form-contest__label" for="user-surname">Фамилия:</label>
+              <input class="form-contest__input" type="text" id="user-surname" placeholder="Укажите фамилию *">
             </div>
 
-            <div class="name">
-              <label class="name__label" for="user-name">Имя:</label>
-              <input class="name__input" type="text" id="user-name" placeholder="Введите ваше имя *">
+            <div class="form-contest__inner">
+              <label class="form-contest__label" for="user-name">Имя:</label>
+              <input class="form-contest__input" type="text" id="user-name" placeholder="Введите ваше имя *">
             </div>
 
-            <div class="patronymic">
-              <label class="patronymic__label" for="user-patronymic">Отчество:</label>
-              <input class="patronymic__input" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
+            <div class="form-contest__inner">
+              <label class="form-contest__label" for="user-patronymic">Отчество:</label>
+              <input class="form-contest__input" type="text" id="user-patronymic" placeholder="Ну и отчество тоже">
             </div>
           </fieldset>
 
-          <fieldset class="achievement">
-            <legend class="achievement__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="achievement-list">
-              <li class="achievement-list__item">
-                <label class="checkbox">
+          <fieldset class="form-contest__part">
+            <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form-contest__list">
+              <li class="form-contest__item">
+                <label class="form-contest__input-checkbox">
                   <input class="visually-hidden" type="checkbox" name="photo" checked="checked">
-                  <span class="checkbox__indicator"></span>
+                  <span class="form-contest__input-indicator"></span>
                   Сделал селфи с акулой
                 </label>
               </li>
-              <li class="achievement-list__item">
-                <label class="checkbox">
+              <li class="form-contest__item">
+                <label class="form-contest__input-checkbox">
                   <input class="visually-hidden" type="checkbox" name="beach" checked="checked">
-                  <span class="checkbox__indicator"></span>
+                  <span class="form-contest__input-indicator"></span>
                   Обгорел на пляже
                 </label>
               </li>
-              <li class="achievement-list__item">
-                <label class="checkbox">
+              <li class="form-contest__item">
+                <label class="form-contest__input-checkbox">
                   <input class="visually-hidden" type="checkbox" name="actor">
-                  <span class="checkbox__indicator"></span>
+                  <span class="form-contest__input-indicator"></span>
                   Видел Чака Норриса
                 </label>
               </li>
-              <li class="achievement-list__item">
-                <label class="checkbox">
+              <li class="form-contest__item">
+                <label class="form-contest__input-checkbox">
                   <input class="visually-hidden" type="checkbox" name="souvenir">
-                  <span class="checkbox__indicator"></span>
+                  <span class="form-contest__input-indicator"></span>
                   Накупил сувениров
                 </label>
               </li>
-              <li class="achievement-list__item">
-                <label class="checkbox">
+              <li class="form-contest__item">
+                <label class="form-contest__input-checkbox">
                   <input class="visually-hidden" type="checkbox" name="tower" checked="checked">
-                  <span class="checkbox__indicator"></span>
+                  <span class="form-contest__input-indicator"></span>
                   Удержал башню
                 </label>
               </li>
-              <li class="achievement-list__item">
-                <label class="checkbox">
+              <li class="form-contest__item">
+                <label class="form-contest__input-checkbox">
                   <input class="visually-hidden" type="checkbox" name="hotel">
-                  <span class="checkbox__indicator"></span>
+                  <span class="form-contest__input-indicator"></span>
                   Разгромил отель
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form-contacts">
-            <div class="phone">
-              <label class="phone__label" for="phone-num">Номер телефона</label>
-              <input class="phone__input" type="text" id="phone-num" placeholder="Номер, пожалуйста">
+          <fieldset class="form-contest__part">
+            <div class="form-contest__inner">
+              <label class="form-contest__label" for="phone-num">Номер телефона</label>
+              <input class="form-contest__input" type="text" id="phone-num" placeholder="Номер, пожалуйста">
             </div>
 
-            <div class="mail">
-              <label class="mail__label" for="mail-add">Адрес почты</label>
-              <input class="mail__input" type="text" id="mail-add" placeholder="Введите почту *">
+            <div class="form-contest__inner">
+              <label class="form-contest__label" for="mail-add">Адрес почты</label>
+              <input class="form-contest__input" type="text" id="mail-add" placeholder="Введите почту *">
             </div>
           </fieldset>
 
-          <fieldset class="application">
-            <legend class="application__title">С каким приложением путешествовали?</legend>
+          <fieldset class="form-contest__part">
+            <legend class="form-contest__title">С каким приложением путешествовали?</legend>
 
-            <ul class="application-list">
-              <li class="application-list__item">
-                <label class="radiobutton">
+            <ul class="form-contest__list app-list">
+              <li class="app-list__item">
+                <label class="app-list__radiobutton">
                   <input class="visually-hidden" type="radio" name="app" checked>
-                  <span class="radiobutton__indicator"></span>
+                  <span class="app-list__radiobutton-indicator"></span>
                   Pink для iOS
                 </label>
               </li>
-              <li class="application-list__item">
-                <label class="radiobutton">
+              <li class="app-list__item">
+                <label class="app-list__radiobutton">
                   <input class="visually-hidden" type="radio" name="app">
-                  <span class="radiobutton__indicator"></span>
+                  <span class="app-list__radiobutton-indicator"></span>
                   Pink на Android
                 </label>
               </li>
-              <li class="application-list__item">
-                <label class="radiobutton">
+              <li class="app-list__item">
+                <label class="app-list__radiobutton">
                   <input class="visually-hidden" type="radio" name="app">
-                  <span class="radiobutton__indicator"></span>
+                  <span class="app-list__radiobutton-indicator"></span>
                   Windows Phone
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form-review">
-            <legend class="form-review__title">Опишите свои эмоции</legend>
-            <textarea class="form-review__text" rows="8" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <fieldset class="form-contest__part">
+            <legend class="form-contest__title">Опишите свои эмоции</legend>
+            <textarea class="form-contest__text" rows="8" cols="80">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
 
           <button class="btn form-contest__btn" type="submit">Отправить форму</button>
@@ -163,7 +161,7 @@
         <img class="logo__img logo__img--glasses" src="#" alt="Pink">
       </a>
 
-      <ul class="social-list">
+      <ul class="footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#" aria-label="Twitter">
             <span class="visually-hidden">Twitter</span>

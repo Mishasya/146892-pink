@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="header header-photo">
+    <header class="page-header page-header--photo">
       <nav class="main-nav">
         <a class="logo">
           <img class="logo__img" src="#" alt="Pink">
@@ -13,12 +13,12 @@
         <button class="main-nav__trigger" type="button" aria-label="Главное меню">y
           <span class="main-nav__hamburger"></span>
         </button>
-        <ul class="nav-list">
+        <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Фотографии</a>
+            <a class="nav-list__link">Фотографии</a>
           </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="#">Конкурс</a>
@@ -32,12 +32,12 @@
       <h1 class="header__title">Фотографии пользователей</h1>
     </header>
 
-    <main class="main-photo">
+    <main class="page-main page-main--photo">
       <section class="gallery">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
         <div class="promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
 
-        <article class="photo">
+        <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
           <blockquote class="photo__content">
             <p class="photo__block photo__block--big-photo">
@@ -168,9 +168,9 @@
           <img class="gallery-filter__img" src="#" alt="Ваше фото">
         </p>
 
-        <span class="gallery-filter__icon gallery-filter__icon--crop"></span>
-        <span class="gallery-filter__icon gallery-filter__icon--fill"></span>
-        <span class="gallery-filter__icon gallery-filter__icon--contrast"></span>
+        <button class="gallery-filter__icon gallery-filter__icon--crop"></button>
+        <button class="gallery-filter__icon gallery-filter__icon--fill"></button>
+        <button class="gallery-filter__icon gallery-filter__icon--contrast"></button>
 
         <div class="gallery-filter__range">
           <div class="gallery-filter__scale">
@@ -179,7 +179,7 @@
           <button class="gallery-filter__toggle" type="button"></button>
         </div>
 
-        <button class="btn gallery-filter__btn" type="submit">Запостить</button>
+        <button class="btn gallery-filter__btn gallery-filter__btn--round-off" type="submit">Запостить</button>
         <button class="btn gallery-filter__btn gallery-filter__btn--disabled" type="button">Отмена</button>
       </form>
     </main>
@@ -189,7 +189,7 @@
         <img class="logo__img logo__img--glasses" src="#" alt="Pink">
       </a>
 
-      <ul class="social-list">
+      <ul class="footer__social social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#" aria-label="Twitter">
             <span class="visually-hidden">Twitter</span>
