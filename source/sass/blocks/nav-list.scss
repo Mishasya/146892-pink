@@ -1,0 +1,28 @@
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  @include list-reset();
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    width: 320px;
+    padding: 15px 0;
+    border-top: 1px solid $border-top-color;
+    border-bottom: 1px solid $black;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+  }
+
+  &--display-none {
+    display: none;
+  }
+}

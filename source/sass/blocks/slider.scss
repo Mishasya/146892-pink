@@ -1,0 +1,41 @@
+.slider {
+
+  &__item {
+    display: none;
+
+    &:nth-child(1) {
+      display: block;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    width: 58px;
+    margin: 0 auto;
+  }
+
+  &__toggle {
+    @include toggle-btn-reset();
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $slider-tg;
+
+    &--active {
+      box-shadow: 0 0 0 3px $dark-grey;
+      background-color: $white;
+    }
+  }
+
+  &__table-column {
+    display: none;
+
+    &--active {
+      display: block;
+      width: 240px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+  }
+}

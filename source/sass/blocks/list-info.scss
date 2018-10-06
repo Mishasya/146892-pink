@@ -1,0 +1,23 @@
+.list-info {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  @include list-reset();
+  @include wrapper-mobile();
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

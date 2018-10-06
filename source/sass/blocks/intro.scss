@@ -1,0 +1,17 @@
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  background-color: $bg-header;
+
+  &__wrapper {
+    @include wrapper-mobile();
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 20px;
+    color: $white;
+    text-align: center;
+  }
+}

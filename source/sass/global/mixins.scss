@@ -1,0 +1,26 @@
+@mixin font-body() {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $dark-grey;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrapper-mobile() {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@mixin toggle-btn-reset() {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}

@@ -1,0 +1,27 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  text-align: center;
+
+  &__wrapper {
+    @include wrapper-mobile();
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+
+  &__intro {
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+
+    &--margin-bottom {
+      margin-bottom: 5px;
+    }
+  }
+}

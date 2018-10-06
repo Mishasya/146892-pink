@@ -1,0 +1,27 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+
+
+  background-color: $dark-grey;
+
+    &__wrapper {
+      display: flex;
+      padding: 20px 0;
+      @include wrapper-mobile();
+    }
+
+    &__trigger {
+      width: 50px;
+      height: 30px;
+      margin-left: auto;
+    }
+
+    &--calm {
+      position: relative;
+      background-color: rgba(29, 38, 49, 0.3);
+      height: 65px;
+      z-index: 10;
+    }
+}
