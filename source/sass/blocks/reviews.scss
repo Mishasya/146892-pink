@@ -5,14 +5,14 @@
 }
 
 .reviews__wrapper {
+  @include wrapper-mobile();
   padding-top: 43px;
   padding-bottom: 70px;
-  @include wrapper-mobile();
 }
 
 .reviews__list {
-  text-align: center;
   @include list-reset();
+  text-align: center;
 }
 
 .reviews__list-quote {

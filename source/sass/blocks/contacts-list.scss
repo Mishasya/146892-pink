@@ -1,7 +1,7 @@
 .contacts-list {
+  @include list-reset();
   display: flex;
   flex-wrap: wrap;
-  @include list-reset();
 }
 
 .contacts-list__item {
