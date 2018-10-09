@@ -3,15 +3,15 @@
   flex-wrap: wrap;
   width: 320px;
   background-color: $bg-header;
+}
 
-  &__wrapper {
-    @include wrapper-mobile();
-  }
+.intro__wrapper {
+  @include wrapper-mobile();
+}
 
-  &__text {
-    margin: 0;
-    margin-top: 20px;
-    color: $white;
-    text-align: center;
-  }
+.intro__text {
+  margin: 0;
+  margin-top: 20px;
+  color: $white;
+  text-align: center;
 }

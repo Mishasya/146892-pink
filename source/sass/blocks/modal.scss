@@ -1,0 +1,40 @@
+.modal {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  &--error {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-grey;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.modal__btn-wrapper {
+  width: 320px;
+  padding-top: 46px;
+  padding-bottom: 50px;
+  background-color: $light-grey;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.modal__wrapper {
+  @include wrapper-mobile();
+}

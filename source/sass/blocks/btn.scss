@@ -1,9 +1,10 @@
 .btn {
   display: block;
   width: 280px;
-  background-color: #2aab6d;
-  color: #ffffff;
-  padding: 20px 0;
+  background-color: $green;
+  color: $white;
+  padding: 18px;
+  border: none;
   border-radius: 2px;
   font-size: 18px;
   line-height: 30px;
@@ -11,6 +12,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 
   &--download {
     width: 274px;
@@ -21,5 +23,18 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+
+    &:active {
+      background-color: $white;
+      color: $pink-opacity;
+    }
   }
+
+  &--modal {
+    margin: 0 auto;
+  }
+}
+
+.btn:focus {
+  outline-color: $pink;
 }

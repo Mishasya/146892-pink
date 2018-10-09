@@ -1,0 +1,7 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 180px;
+  @include list-reset();
+}
