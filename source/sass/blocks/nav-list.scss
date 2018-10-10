@@ -1,0 +1,27 @@
+.nav-list {
+  @include list-reset();
+  width: 320px;
+}
+
+.nav-list__item {
+  text-align: center;
+}
+
+.nav-list__link {
+  display: block;
+  width: 320px;
+  padding: 15px 0;
+  border-top: 1px solid $border-top-color;
+  border-bottom: 1px solid $black;
+  background-color: $dark-grey;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+
+  &:active {
+    color: $pink;
+  }
+}

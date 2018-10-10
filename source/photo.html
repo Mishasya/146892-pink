@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header page-header--photo">
@@ -29,13 +31,15 @@
         </ul>
       </nav>
 
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
     </header>
 
     <main class="page-main page-main--photo">
       <section class="gallery">
         <h2 class="visually-hidden">Фотографии пользователей</h2>
-        <div class="promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</div>
+        <div class="promo promo--photo">
+          <p class="promo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
 
         <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
@@ -55,7 +59,7 @@
           </div>
         </article>
 
-        <article class="photo">
+        <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
           <blockquote class="photo__content">
             <p class="photo__block">
@@ -72,7 +76,7 @@
           </div>
         </article>
 
-        <article class="photo">
+        <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
           <blockquote class="photo__content">
             <p class="photo__block">
@@ -89,7 +93,7 @@
           </div>
         </article>
 
-        <article class="photo">
+        <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
           <blockquote class="photo__content">
             <p class="photo__block">
@@ -106,7 +110,7 @@
           </div>
         </article>
 
-        <article class="photo">
+        <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
           <blockquote class="photo__content">
             <p class="photo__block">
@@ -123,7 +127,7 @@
           </div>
         </article>
 
-        <article class="photo">
+        <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
           <blockquote class="photo__content">
             <p class="photo__block">
@@ -140,7 +144,7 @@
           </div>
         </article>
 
-        <article class="photo">
+        <article class="gallery__photo photo">
           <h2 class="visually-hidden">Фото пользователя</h2>
           <blockquote class="photo__content">
             <p class="photo__block">
@@ -184,7 +188,7 @@
       </form>
     </main>
 
-    <footer class="footer">
+    <footer class="page-footer">
       <a class="logo" href="index.html">
         <img class="logo__img logo__img--glasses" src="#" alt="Pink">
       </a>

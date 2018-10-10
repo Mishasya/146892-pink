@@ -1,0 +1,185 @@
+.form-contest {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.form-contest__fieldset-wrapper {
+  width: 320px;
+  padding-top: 38px;
+  padding-bottom: 45px;
+  margin-bottom: 33px;
+  background-color: $light-grey;
+
+  &--margin-app {
+    margin-bottom: 37px;
+  }
+}
+
+.form-contest__part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+
+  &--padding {
+    padding-bottom: 25px;
+  }
+
+  &--margin-btn {
+    margin-bottom: 48px;
+  }
+}
+
+.form-contest__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-contest__label {
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  margin-left: 22px;
+}
+
+.form-contest__input {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 20px;
+  border: 2px solid $shade-of-grey;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.form-contest__input:active,
+.form-contest__input:focus {
+  outline: none;
+  border-color: $pink;
+}
+
+.form-contest__input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $dark-grey;
+}
+
+.form-contest__title {
+  width: 220px;
+  margin-bottom: 38px;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--margin-textarea {
+    margin-bottom: 15px;
+  }
+}
+
+.form-contest__list {
+  @include list-reset();
+}
+
+.form-contest__item {
+  margin-bottom: 46px;
+
+  &--radio {
+    margin-bottom: 37px;
+  }
+}
+
+.form-contest__item:last-child {
+  margin-bottom: 0;
+}
+
+.form-contest__label-check {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.form-contest__hidden-input + .form-contest__input-indicator {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 2px solid $shade-of-grey;
+  background-color: $white;
+}
+
+.form-contest__hidden-input:checked + .form-contest__input-indicator {
+  background: $white url("../img/icon-yes.svg") no-repeat center;
+}
+
+.form-contest__hidden-input:focus + .form-contest__input-indicator,
+.form-contest__hidden-input:active + .form-contest__input-indicator {
+  border-color: $pink;
+}
+
+.form-contest__hidden-input[type="radio"] + .form-contest__input-indicator {
+  width: 15px;
+  height: 15px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 10px solid $white;
+  box-shadow: 0 0 0 2px $shade-of-grey;
+}
+
+.form-contest__hidden-input[type="radio"]:checked + .form-contest__input-indicator {
+  background-color: $pink;
+}
+
+.form-contest__hidden-input[type="radio"]:active + .form-contest__input-indicator {
+  box-shadow: 0 0 0 2px $pink;
+}
+
+.form-contest__hidden-input[type="radio"]:focus + .form-contest__input-indicator {
+  box-shadow: 0 0 0 2px $pink;
+}
+
+.form-contest__textarea {
+  width: 238px;
+  min-height: 160px;
+  resize: none;
+  border: 2px solid $shade-of-grey;
+  border-radius: 3px;
+  padding: 20px;
+  padding-top: 17px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-grey;
+}
+
+.form-contest__wrapper-btn {
+  @include wrapper-mobile();
+  margin-bottom: 20px;
+}
+
+.form-contest__foot-note {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-contest__foot-text {
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form-contest__foot-sup {
+  vertical-align: bottom;
+  color: $pink;
+}

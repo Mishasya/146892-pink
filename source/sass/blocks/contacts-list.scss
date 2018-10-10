@@ -1,0 +1,24 @@
+.contacts-list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-list__item {
+  width: 280px;
+}
+
+.contacts-list__title {
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-grey;
+}
+
+.contacts-list__info {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $pink;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+}

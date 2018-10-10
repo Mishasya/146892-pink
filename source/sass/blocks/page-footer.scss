@@ -1,0 +1,25 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 320px;
+}
+
+.page-footer__wrapper {
+  @include wrapper-mobile();
+}
+
+.page-footer__logo {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.page-footer__development {
+  width: 140px;
+  margin: 0 auto;
+}
+
+.page-footer__developer {
+  line-height: 18px;
+}

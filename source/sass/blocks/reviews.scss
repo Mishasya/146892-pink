@@ -1,0 +1,35 @@
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+.reviews__wrapper {
+  @include wrapper-mobile();
+  padding-top: 43px;
+  padding-bottom: 70px;
+}
+
+.reviews__list {
+  @include list-reset();
+  text-align: center;
+}
+
+.reviews__list-quote {
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.reviews__list-autor {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  font-style: normal;
+}
+
+.reviews__list-text {
+  margin: 0;
+  margin-top: 13px;
+  line-height: 30px;
+}
