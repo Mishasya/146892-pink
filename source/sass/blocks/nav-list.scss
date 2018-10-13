@@ -25,3 +25,9 @@
     color: $pink;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .nav-list {
+    width: 660px;
+  }
+}

@@ -1,8 +1,7 @@
 .list-info {
   @include list-reset();
   @include wrapper-mobile();
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -20,4 +19,12 @@
 
 .list-info__text {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .list-info {
+    width: 310px;
+    margin-right: 20px;
+    text-align: left;
+  }
 }

@@ -17,6 +17,11 @@
   margin: 0 auto;
 }
 
+@mixin wrapper-tablet() {
+  width: 620px;
+  margin: 0 auto;
+}
+
 @mixin toggle-btn-reset() {
   padding: 0;
   border: none;

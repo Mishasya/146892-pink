@@ -1,16 +1,14 @@
 .page-header {
-  display: flex;
-  flex-wrap: wrap;
   width: 320px;
-  background-color: $bg-header;
+  background-color: $dark-grey;
 
   &--form {
-    background: $bg-header url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+    background: $dark-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
     background-size: cover;
   }
 
   &--photo {
-    background: $bg-header url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+    background: $dark-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
     background-size: cover;
   }
 }
@@ -40,5 +38,21 @@
 
   &--photo {
     margin-bottom: 85px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+  }
+
+  .page-header__wrapper {
+    min-height: 730px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom, center;
   }
 }
