@@ -1,0 +1,68 @@
+.photo {
+  width: 280px;
+
+  &--main {
+    width: 320px;
+  }
+}
+
+.photo__block {
+  margin: 0;
+  width: 280px;
+  height: 180px;
+
+  &--big-photo {
+    position: relative;
+    width: 320px;
+    height: 137px;
+  }
+}
+
+.photo__slogan {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 6px 20px;
+  background-color: $pink;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.photo__content {
+  margin: 0;
+  padding: 25px 18px;
+  background-color: $light-grey;
+
+  &--main {
+    width: 244px;
+    margin: 0 auto;
+  }
+}
+
+.photo__autor {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.photo__time {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.photo__text {
+  margin: 0;
+}
+
+.photo__likes {
+  padding-left: 35px;
+}
+
+.photo__likes-text {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $pink;
+}

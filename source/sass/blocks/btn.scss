@@ -14,6 +14,14 @@
   text-align: center;
   cursor: pointer;
 
+  &:focus {
+    outline-color: $pink;
+  }
+
+  &:disabled {
+    background-color: $shade-of-grey;
+  }
+
   &--download {
     width: 274px;
     border: 3px solid $white;
@@ -33,8 +41,37 @@
   &--modal {
     margin: 0 auto;
   }
-}
 
-.btn:focus {
-  outline-color: $pink;
+  &--round-off {
+    width: 278px;
+    border: 3px solid $pink;
+    border-radius: 40px;
+    padding: 15px 0;
+    color: $pink;
+    background-color: transparent;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    width: 278px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 40px;
+    padding: 15px 0;
+    color: rgba(40, 54, 69, 0.1);
+    background-color: transparent;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+
+    &:active {
+      background-color: $dark-grey-opacity;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

@@ -8,6 +8,11 @@
     background: $bg-header url("../img/bg-back-mobile@1x.jpg") no-repeat top;
     background-size: cover;
   }
+
+  &--photo {
+    background: $bg-header url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+    background-size: cover;
+  }
 }
 
 .page-header__wrapper {
@@ -32,4 +37,8 @@
   font-weight: 300;
   color: $white;
   text-align: center;
+
+  &--photo {
+    margin-bottom: 85px;
+  }
 }
