@@ -1,11 +1,11 @@
-.contest {
-  display: flex;
-  flex-wrap: wrap;
+.map {
   width: 320px;
+  height: 200px;
 }
 
 @media (min-width: $tablet-width) {
-  .contest {
+  .map {
     width: 660px;
+    height: 375px;
   }
 }

@@ -1,6 +1,4 @@
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
   width: 320px;
   text-align: center;
 }
@@ -23,5 +21,20 @@
 
   &--margin-bottom {
     margin-bottom: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 660px;
+  }
+
+  .contacts__wrapper {
+    @include wrapper-tablet();
+  }
+
+  .contacts__text {
+    font-size: 40px;
+    line-height: 46px;
   }
 }

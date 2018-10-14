@@ -44,10 +44,54 @@
   text-transform: uppercase;
 }
 
-.price__controls-wrapper {
-  width: 320px;
+@media (max-width: $mobile-width-only) {
+  .price__table-desc--no-mobile {
+    display: none;
+  }
+
+  .price__table-title--invisible {
+    display: none;
+  }
+
+  .price__controls-wrapper {
+    width: 320px;
+  }
+
+  .price__controls {
+    margin: 0 auto;
+  }
 }
 
-.price__controls {
-  margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .price {
+    width: 660px;
+  }
+
+  .price__wrapper {
+    width: 660px;
+  }
+
+  .price__table {
+    @include wrapper-tablet();
+  }
+
+  .price__table-desc {
+    font-size: 0;
+    width: 100px;
+  }
+
+  .price__table-title--invisible {
+    border: none;
+    background-color: transparent;
+  }
+
+  .price__table-desc--no-mobile {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
+
+  .price__controls-wrapper {
+    display: none;
+  }
 }

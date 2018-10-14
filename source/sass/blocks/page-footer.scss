@@ -23,3 +23,9 @@
 .page-footer__developer {
   line-height: 18px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .page-footer--mobile-only {
+    display: none;
+  }
+}

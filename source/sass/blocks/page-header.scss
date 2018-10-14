@@ -42,17 +42,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 660px;
-  }
-
   .page-header__wrapper {
     min-height: 730px;
     background-image: url("../img/iphone-hand-tablet@1x.png"),
       url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom, center;
+  }
+
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+
+    &--form {
+      min-height: 440px;
+      background: $dark-grey url("../img/bg-back-tablet@1x.jpg") no-repeat top;
+    }
+  }
+
+  .page-header__title {
+    width: 480px;
+    font-size: 50px;
+    line-height: 56px;
   }
 }
