@@ -20,6 +20,12 @@
   text-align: center;
 }
 
+@media (max-width: $mobile-width-only) {
+  .promo__text--mobile-none {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .promo {
     width: 620px;
@@ -27,6 +33,7 @@
 
   .promo__text {
     width: 500px;
+    margin: 0 auto;
     font-size: 18px;
   }
 }

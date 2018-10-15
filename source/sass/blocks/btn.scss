@@ -14,8 +14,18 @@
   text-align: center;
   cursor: pointer;
 
+  &:hover {
+    background-color: $dark-green;
+  }
+
   &:focus {
-    outline-color: $pink;
+    outline: none;
+    box-shadow: inset 0 0 0 3px $dark-grey;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &:disabled {
@@ -32,6 +42,11 @@
     font-size: 18px;
     line-height: 18px;
 
+    &:hover {
+      background-color: $white;
+      color: $pink;
+    }
+
     &:active {
       background-color: $white;
       color: $pink-opacity;
@@ -42,7 +57,7 @@
     margin: 0 auto;
   }
 
-  &--round-off {
+  &--upload {
     width: 278px;
     border: 3px solid $pink;
     border-radius: 40px;
@@ -52,6 +67,11 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
@@ -68,6 +88,12 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $dark-grey-opacity;
+      color: $dark-grey-opacity;
+    }
 
     &:active {
       background-color: $dark-grey-opacity;
