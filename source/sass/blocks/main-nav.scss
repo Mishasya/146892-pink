@@ -1,5 +1,4 @@
 .main-nav {
-  position: relative;
   width: 320px;
   background-color: $dark-grey;
 
@@ -20,7 +19,6 @@
   width: 50px;
   height: 25px;
   border: none;
-  z-index: 2;
   cursor: pointer;
 
   &:active {

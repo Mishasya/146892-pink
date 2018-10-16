@@ -174,17 +174,26 @@
             <img class="gallery-filter__img" src="#" alt="Ваше фото">
           </p>
 
-          <button class="gallery-filter__icon gallery-filter__icon--crop"></button>
-          <button class="gallery-filter__icon gallery-filter__icon--fill"></button>
-          <button class="gallery-filter__icon gallery-filter__icon--contrast"></button>
+          <div class="gallery-filter__set-wrapper">
+            <button class="gallery-filter__icon gallery-filter__icon--crop"></button>
+            <div class="gallery-filter__range gallery-filter__range--mobile-none">
+              <div class="gallery-filter__scale"></div>
+              <button class="gallery-filter__toggle" type="button"></button>
+            </div>
+            <button class="gallery-filter__icon gallery-filter__icon--fill"></button>
+            <div class="gallery-filter__range gallery-filter__range--mobile-none">
+              <div class="gallery-filter__scale"></div>
+              <button class="gallery-filter__toggle" type="button"></button>
+            </div>
+            <button class="gallery-filter__icon gallery-filter__icon--contrast"></button>
+            <div class="gallery-filter__range">
+              <div class="gallery-filter__scale"></div>
+              <button class="gallery-filter__toggle" type="button"></button>
+            </div>
 
-          <div class="gallery-filter__range">
-            <div class="gallery-filter__scale"></div>
-            <button class="gallery-filter__toggle" type="button"></button>
+            <button class="btn btn--upload" type="submit">Запостить</button>
+            <button class="btn btn--cancel" type="button">Отмена</button>
           </div>
-
-          <button class="btn btn--upload" type="submit">Запостить</button>
-          <button class="btn btn--cancel" type="button">Отмена</button>
         </div>
       </form>
     </main>

@@ -31,24 +31,13 @@
     justify-content: space-between;
   }
 
-  .photo {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    margin: 0;
-    margin-bottom: 20px;
-
-    &--main {
-      margin: 0 auto;
-    }
+  .gallery__slogan {
+    @include wrapper-tablet();
+    padding: 65px 0;
+    font-size: 18px;
   }
 
-  .photo__content {
-    width: 300px;
-    min-height: 155px;
-  }
-
-  .photo__likes {
-    margin-top: auto;
+  .gallery-filter {
+    @include wrapper-tablet();
   }
 }

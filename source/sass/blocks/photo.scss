@@ -66,3 +66,29 @@
   text-transform: uppercase;
   color: $pink;
 }
+
+@media (min-width: $tablet-width) {
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    &--main {
+      margin: 0 auto;
+    }
+  }
+
+  .photo__content {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 105px;
+  }
+
+  .photo__likes {
+    margin-top: auto;
+    padding-left: 0;
+  }
+}
