@@ -2,12 +2,7 @@
   width: 320px;
   background-color: $dark-grey;
 
-  &--form {
-    background: $dark-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
-    background-size: cover;
-  }
-
-  &--photo {
+  &--no-hand {
     background: $dark-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
     background-size: cover;
   }
@@ -55,7 +50,7 @@
     flex-wrap: wrap;
     width: 660px;
 
-    &--form {
+    &--no-hand {
       min-height: 440px;
       background: $dark-grey url("../img/bg-back-tablet@1x.jpg") no-repeat top;
     }

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--photo">
+    <header class="page-header page-header--no-hand">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="logo">
@@ -43,66 +42,15 @@
 
         <article class="gallery__photo photo photo--main">
           <h2 class="visually-hidden">Фото пользователя</h2>
-            <p class="photo__block photo__block--big-photo">
-              <img class="photo__img photo__img--photo-day" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
-              <span class="photo__slogan">Панорама дня</span>
-            </p>
-            <blockquote class="photo__content photo__content--main">
-              <cite class="photo__autor">Анна
-                <span class="photo__time">(5 минут назад)</span>
-              </cite>
-              <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="photo__likes">
-                <span class="photo__likes-heart"></span>
-                <p class="photo__likes-text">Нравится: 215</p>
-              </div>
-            </blockquote>
-        </article>
-
-        <article class="gallery__photo photo">
-          <h2 class="visually-hidden">Фото пользователя</h2>
-          <p class="photo__block">
-            <img class="photo__img" src="img\photo-car-mobile@1x.jpg" alt="Машина">
+          <p class="photo__block photo__block--big-photo">
+            <img class="photo__img photo__img--photo-day" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+            <span class="photo__slogan">Панорама дня</span>
           </p>
-          <blockquote class="photo__content">
-            <cite class="photo__autor">Левон
-              <span class="photo__time">(5 часов назад)</span>
+          <blockquote class="photo__content photo__content--main">
+            <cite class="photo__autor">Анна
+              <span class="photo__time">(5 минут назад)</span>
             </cite>
-            <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo__likes">
-              <span class="photo__likes-heart"></span>
-              <p class="photo__likes-text">Нравится: 356</p>
-            </div>
-          </blockquote>
-        </article>
-
-        <article class="gallery__photo photo">
-          <h2 class="visually-hidden">Фото пользователя</h2>
-          <p class="photo__block">
-            <img class="photo__img" src="img\photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__autor">Антон
-              <span class="photo__time">(12 часов назад)</span>
-            </cite>
-            <p class="photo__text">Соседи будут рады!</p>
-            <div class="photo__likes">
-              <span class="photo__likes-heart"></span>
-              <p class="photo__likes-text">Нравится: 666</p>
-            </div>
-          </blockquote>
-        </article>
-
-        <article class="gallery__photo photo">
-          <h2 class="visually-hidden">Фото пользователя</h2>
-          <p class="photo__block">
-            <img class="photo__img" src="img\photo-window-mobile@1x.jpg" alt="Стеклянная крыша">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__autor">Борис
-              <span class="photo__time">(20 часов назад)</span>
-            </cite>
-            <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="photo__likes">
               <span class="photo__likes-heart"></span>
               <p class="photo__likes-text">Нравится: 215</p>
@@ -110,56 +58,109 @@
           </blockquote>
         </article>
 
-        <article class="gallery__photo photo">
-          <h2 class="visually-hidden">Фото пользователя</h2>
-          <p class="photo__block">
-            <img class="photo__img" src="img\photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__autor">Сергей
-              <span class="photo__time">(25 часов назад)</span>
-            </cite>
-            <p class="photo__text">Самая кубанская в мире!</p>
-            <div class="photo__likes">
-              <span class="photo__likes-heart"></span>
-              <p class="photo__likes-text">Нравится: 4</p>
-            </div>
-          </blockquote>
-        </article>
+        <div class="gallery__wrapper">
+          <article class="gallery__photo photo">
+            <h2 class="visually-hidden">Фото пользователя</h2>
+            <p class="photo__block">
+              <img class="photo__img" src="img\photo-car-mobile@1x.jpg" alt="Машина">
+            </p>
+            <blockquote class="photo__content">
+              <cite class="photo__autor">Левон
+                <span class="photo__time">(5 часов назад)</span>
+              </cite>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo__likes">
+                <span class="photo__likes-heart"></span>
+                <p class="photo__likes-text">Нравится: 356</p>
+              </div>
+            </blockquote>
+          </article>
 
-        <article class="gallery__photo photo">
-          <h2 class="visually-hidden">Фото пользователя</h2>
-          <p class="photo__block">
-            <img class="photo__img" src="img\photo-pov-mobile@1x.jpg" alt="Склон горы">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__autor">Максим
-              <span class="photo__time">(40 часов назад)</span>
-            </cite>
-            <p class="photo__text">Где снег-то?</p>
-            <div class="photo__likes">
-              <span class="photo__likes-heart"></span>
-              <p class="photo__likes-text">Нравится: 150</p>
-            </div>
-          </blockquote>
-        </article>
+          <article class="gallery__photo photo">
+            <h2 class="visually-hidden">Фото пользователя</h2>
+            <p class="photo__block">
+              <img class="photo__img" src="img\photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+            </p>
+            <blockquote class="photo__content">
+              <cite class="photo__autor">Антон
+                <span class="photo__time">(12 часов назад)</span>
+              </cite>
+              <p class="photo__text">Соседи будут рады!</p>
+              <div class="photo__likes">
+                <span class="photo__likes-heart"></span>
+                <p class="photo__likes-text">Нравится: 666</p>
+              </div>
+            </blockquote>
+          </article>
 
-        <article class="gallery__photo photo">
-          <h2 class="visually-hidden">Фото пользователя</h2>
-          <p class="photo__block">
-            <img class="photo__img" src="img\photo-wing-mobile@1x.jpg" alt="Крыло самолёта">
-          </p>
-          <blockquote class="photo__content">
-            <cite class="photo__autor">Надежда
-              <span class="photo__time">(45 часов назад)</span>
-            </cite>
-            <p class="photo__text">Всем GM и взаимные лайки!</p>
-            <div class="photo__likes">
-              <span class="photo__likes-heart"></span>
-              <p class="photo__likes-text">Нравится: 2560</p>
-            </div>
-          </blockquote>
-        </article>
+          <article class="gallery__photo photo">
+            <h2 class="visually-hidden">Фото пользователя</h2>
+            <p class="photo__block">
+              <img class="photo__img" src="img\photo-window-mobile@1x.jpg" alt="Стеклянная крыша">
+            </p>
+            <blockquote class="photo__content">
+              <cite class="photo__autor">Борис
+                <span class="photo__time">(20 часов назад)</span>
+              </cite>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo__likes">
+                <span class="photo__likes-heart"></span>
+                <p class="photo__likes-text">Нравится: 215</p>
+              </div>
+            </blockquote>
+          </article>
+
+          <article class="gallery__photo photo">
+            <h2 class="visually-hidden">Фото пользователя</h2>
+            <p class="photo__block">
+              <img class="photo__img" src="img\photo-fair-mobile@1x.jpg" alt="Кубанская бахча">
+            </p>
+            <blockquote class="photo__content">
+              <cite class="photo__autor">Сергей
+                <span class="photo__time">(25 часов назад)</span>
+              </cite>
+              <p class="photo__text">Самая кубанская в мире!</p>
+              <div class="photo__likes">
+                <span class="photo__likes-heart"></span>
+                <p class="photo__likes-text">Нравится: 4</p>
+              </div>
+            </blockquote>
+          </article>
+
+          <article class="gallery__photo photo">
+            <h2 class="visually-hidden">Фото пользователя</h2>
+            <p class="photo__block">
+              <img class="photo__img" src="img\photo-pov-mobile@1x.jpg" alt="Склон горы">
+            </p>
+            <blockquote class="photo__content">
+              <cite class="photo__autor">Максим
+                <span class="photo__time">(40 часов назад)</span>
+              </cite>
+              <p class="photo__text">Где снег-то?</p>
+              <div class="photo__likes">
+                <span class="photo__likes-heart"></span>
+                <p class="photo__likes-text">Нравится: 150</p>
+              </div>
+            </blockquote>
+          </article>
+
+          <article class="gallery__photo photo">
+            <h2 class="visually-hidden">Фото пользователя</h2>
+            <p class="photo__block">
+              <img class="photo__img" src="img\photo-wing-mobile@1x.jpg" alt="Крыло самолёта">
+            </p>
+            <blockquote class="photo__content">
+              <cite class="photo__autor">Надежда
+                <span class="photo__time">(45 часов назад)</span>
+              </cite>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+              <div class="photo__likes">
+                <span class="photo__likes-heart"></span>
+                <p class="photo__likes-text">Нравится: 2560</p>
+              </div>
+            </blockquote>
+          </article>
+        </div>
 
         <div class="gallery__slogan">
           <p class="gallery__text-one">Затмите их всех!</p>

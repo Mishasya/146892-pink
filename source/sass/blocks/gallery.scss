@@ -18,3 +18,37 @@
 .gallery__text-two {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    width: 660px;
+  }
+
+  .gallery__wrapper {
+    @include wrapper-tablet();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    &--main {
+      margin: 0 auto;
+    }
+  }
+
+  .photo__content {
+    width: 300px;
+    min-height: 155px;
+  }
+
+  .photo__likes {
+    margin-top: auto;
+  }
+}

@@ -28,7 +28,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    width: 620px;
+    @include wrapper-tablet();
   }
 
   .promo__text {
