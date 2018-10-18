@@ -9,3 +9,10 @@
     height: 375px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 1200px;
+    height: 505px;
+  }
+}

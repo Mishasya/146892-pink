@@ -102,3 +102,33 @@
     margin-right: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gallery-filter {
+    width: 1200px;
+    background-color: $white;
+  }
+
+  .gallery-filter__wrapper {
+    width: 780px;
+    margin: 0 auto;
+    background-color: $light-grey;
+    padding: 55px 80px;
+  }
+
+  .gallery-filter__set-wrapper {
+    width: 410px;
+  }
+
+  .gallery-filter__range {
+    width: 410px;
+
+    &::after {
+      width: 410px;
+    }
+  }
+
+  .gallery-filter__scale {
+    width: 290px;
+  }
+}

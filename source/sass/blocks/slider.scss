@@ -34,3 +34,9 @@
     background-color: rgba(40, 54, 69, 0.1);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__controls {
+    display: none;
+  }
+}

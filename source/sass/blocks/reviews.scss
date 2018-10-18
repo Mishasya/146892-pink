@@ -63,3 +63,30 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1200px;
+  }
+
+  .reviews__wrapper {
+    @include wrapper-desktop();
+  }
+
+  .reviews__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .reviews__list-item {
+    padding: 0 125px;
+  }
+
+  .reviews__list-quote {
+    text-align: center;
+  }
+
+  .reviews__list-text {
+    font-size: 18px;
+  }
+}

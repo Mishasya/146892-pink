@@ -95,3 +95,25 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .price {
+    width: 1200px;
+  }
+
+  .price__wrapper {
+    @include wrapper-desktop();
+  }
+
+  .price__table {
+    width: 950px;
+  }
+
+  .price__table-desc {
+    width: 225px;
+
+    &--no-mobile {
+      font-size: 18px;
+    }
+  }
+}

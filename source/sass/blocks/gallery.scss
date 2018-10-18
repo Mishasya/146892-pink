@@ -36,8 +36,14 @@
     padding: 65px 0;
     font-size: 18px;
   }
+}
 
-  .gallery-filter {
-    @include wrapper-tablet();
+@media (min-width: $desktop-width) {
+  .gallery {
+    width: 1200px;
+  }
+
+  .gallery__wrapper {
+    @include wrapper-desktop();
   }
 }

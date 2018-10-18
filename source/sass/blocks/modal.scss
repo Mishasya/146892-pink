@@ -69,3 +69,35 @@
     display: none;
   }
 }
+
+@media (max-width: $desktop-width) {
+  .modal__btn-wrapper {
+    &--desktop-only {
+      background-color: $white;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+  }
+
+  .modal__wrapper {
+    width: 400px;
+  }
+
+  .modal__title {
+    width: 400px;
+  }
+
+  .modal__btn-wrapper {
+    width: 780px;
+    padding: 50px 0;
+    background-color: $light-grey;
+  }
+
+  .modal__text {
+    width: 380px;
+  }
+}

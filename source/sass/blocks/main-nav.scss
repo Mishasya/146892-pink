@@ -1,5 +1,6 @@
 .main-nav {
   width: 320px;
+  min-height: 65px;
   background-color: $dark-grey;
 
   &--closed {
@@ -9,15 +10,18 @@
 
 .main-nav__wrapper {
   @include wrapper-mobile();
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   min-height: 65px;
 }
 
 .main-nav__trigger {
+  position: absolute;
+  right: 0;
   width: 50px;
   height: 25px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
@@ -26,9 +30,9 @@
   }
 }
 
-.main-nav--closed .nav-list__item {
-  display: none;
-}
+// .main-nav--closed .nav-list {
+//   display: none;
+// }
 
 .main-nav--nojs .main-nav__trigger {
   display: none;
@@ -47,5 +51,20 @@
   .main-nav__wrapper {
     @include wrapper-tablet();
     min-height: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+
+  .main-nav__wrapper {
+    @include wrapper-desktop();
+    justify-content: space-between;
+  }
+
+  .main-nav__trigger {
+    display: none;
   }
 }

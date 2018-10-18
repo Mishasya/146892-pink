@@ -28,3 +28,23 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .list-info {
+    @include wrapper-desktop();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list-info__item {
+    width: 270px;
+    text-align: center;
+  }
+
+  .list-info__title {
+    width: 230px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

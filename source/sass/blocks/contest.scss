@@ -9,3 +9,9 @@
     width: 660px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contest {
+    width: 1200px;
+  }
+}

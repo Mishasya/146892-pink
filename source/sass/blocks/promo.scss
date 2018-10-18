@@ -37,3 +37,14 @@
     font-size: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    @include wrapper-desktop();
+  }
+
+  .promo__text {
+    width: 620px;
+    padding: 90px 0;
+  }
+}

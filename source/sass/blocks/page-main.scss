@@ -7,3 +7,13 @@
     width: 660px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+
+    &--form {
+      background-color: $white;
+    }
+  }
+}

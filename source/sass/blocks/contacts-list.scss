@@ -36,3 +36,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-list__item:nth-child(2) {
+    order: 1;
+  }
+}
