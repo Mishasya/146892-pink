@@ -1,6 +1,4 @@
 .information {
-  display: flex;
-  flex-wrap: wrap;
   width: 320px;
 }
 
@@ -16,10 +14,10 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
+}
 
-  &--margin-bottom {
-    padding-bottom: 30px;
-  }
+.information__text:nth-child(2) {
+  margin-bottom: 30px;
 }
 
 .information__list-wrapper {
@@ -27,5 +25,118 @@
   padding-top: 50px;
   padding-bottom: 287px;
   background: $light-grey url("../img/iphone-screen-mobile@1x.png") no-repeat center 477px;
-  background-color: $light-grey;
+}
+
+@media (max-width: $mobile-width-only) {
+  .information__effect {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .information {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+  }
+
+  .information__slogan {
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  .information__text {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .information__text:nth-child(2) {
+    margin: 0;
+  }
+
+  .information__text:last-of-type {
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  .information__link {
+    color: $pink;
+  }
+
+  .information__list-wrapper {
+    width: 660px;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background: $light-grey url("../img/iphone-screen-3-tablet@1x.png") no-repeat 30px;
+  }
+
+  .information__effect {
+    @include wrapper-tablet();
+    display: flex;
+    padding-top: 57px;
+    padding-bottom: 65px;
+  }
+
+  .information__effect-wrapper {
+    width: 296px;
+    margin-left: auto;
+  }
+
+  .information__title {
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+  }
+
+  .information__indent {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information {
+    width: 1200px;
+    background-color: $light-grey;
+  }
+
+  .information__slogan {
+    width: 820px;
+  }
+
+  .information__text {
+    font-size: 50px;
+    line-height: 56px;
+
+    &:last-of-type {
+      width: 430px;
+    }
+  }
+
+  .information__list-wrapper {
+    width: 1200px;
+  }
+
+  .information__effect {
+    width: 1200px;
+  }
+
+  .information__effect-wrapper {
+    @include wrapper-desktop();
+    padding-left: 370px;
+  }
+
+  .information__indent {
+    width: 410px;
+  }
+
+  .information__indent br {
+    display: none;
+  }
+
+  .information__title br {
+    display: none;
+  }
 }

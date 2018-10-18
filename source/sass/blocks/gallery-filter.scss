@@ -1,0 +1,134 @@
+.gallery-filter {
+  width: 320px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  background-color: $light-grey;
+}
+
+.gallery-filter__wrapper {
+  @include wrapper-mobile();
+}
+
+.gallery-filter__range {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 67px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    margin-top: 36px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.gallery-filter__scale {
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: $dark-grey;
+}
+
+.gallery-filter__toggle {
+  position: absolute;
+  top: -6px;
+  left: 213px;
+  padding: 0;
+  border: 2px solid $pink;
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $pink;
+  }
+}
+
+.gallery-filter .btn--round-off {
+  margin-bottom: 12px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .gallery-filter__range--mobile-none {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-filter {
+    width: 660px;
+  }
+
+  .gallery-filter__wrapper {
+    @include wrapper-tablet();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery-filter__photo {
+    width: 300px;
+    height: 400px;//временно
+    border: 1px solid #000000;//временно
+  }
+
+  .gallery-filter__set-wrapper {
+    width: 275px;
+  }
+
+  .gallery-filter__range {
+    width: 275px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 275px;
+      height: 1px;
+      margin-top: 36px;
+      margin-bottom: 25px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .gallery-filter__scale {
+    width: 205px;
+    margin-right: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-filter {
+    width: 1200px;
+    background-color: $white;
+  }
+
+  .gallery-filter__wrapper {
+    width: 780px;
+    margin: 0 auto;
+    background-color: $light-grey;
+    padding: 55px 80px;
+  }
+
+  .gallery-filter__set-wrapper {
+    width: 410px;
+  }
+
+  .gallery-filter__range {
+    width: 410px;
+
+    &::after {
+      width: 410px;
+    }
+  }
+
+  .gallery-filter__scale {
+    width: 290px;
+  }
+}

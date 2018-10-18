@@ -1,16 +1,50 @@
 .promo {
   width: 320px;
+  margin: 0 auto;
 
   &--form {
     width: 280px;
     padding-top: 45px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 35px;
+    padding-bottom: 35px;
+  }
+
+  &--photo {
+    width: 245px;
+    padding: 45px 0;
   }
 }
 
 .promo__text {
   margin: 0;
   line-height: 30px;
+  text-align: center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo__text--mobile-none {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    @include wrapper-tablet();
+  }
+
+  .promo__text {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    @include wrapper-desktop();
+  }
+
+  .promo__text {
+    width: 620px;
+    padding: 90px 0;
+  }
 }

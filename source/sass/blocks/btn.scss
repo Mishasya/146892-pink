@@ -14,15 +14,38 @@
   text-align: center;
   cursor: pointer;
 
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 3px $dark-grey;
+  }
+
+  &:active {
+    background-color: $dark-green;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $shade-of-grey;
+  }
+
   &--download {
     width: 274px;
     border: 3px solid $white;
     border-radius: 40px;
     padding: 15px 0;
-    background-color: $bg-header;
+    background-color: transparent;
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+
+    &:hover {
+      background-color: $white;
+      color: $pink;
+    }
 
     &:active {
       background-color: $white;
@@ -33,8 +56,52 @@
   &--modal {
     margin: 0 auto;
   }
-}
 
-.btn:focus {
-  outline-color: $pink;
+  &--upload {
+    width: 278px;
+    border: 3px solid $pink;
+    border-radius: 40px;
+    padding: 15px 0;
+    color: $pink;
+    background-color: transparent;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    width: 278px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 40px;
+    padding: 15px 0;
+    color: rgba(40, 54, 69, 0.1);
+    background-color: transparent;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 18px;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $dark-grey-opacity;
+      color: $dark-grey-opacity;
+    }
+
+    &:active {
+      background-color: $dark-grey-opacity;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--ok {
+    margin: 0 auto;
+  }
 }

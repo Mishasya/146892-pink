@@ -1,8 +1,6 @@
 .intro {
-  display: flex;
-  flex-wrap: wrap;
   width: 320px;
-  background-color: $bg-header;
+  background-color: $dark-grey;
 }
 
 .intro__wrapper {
@@ -14,4 +12,37 @@
   margin-top: 20px;
   color: $white;
   text-align: center;
+}
+
+.intro__slogan {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: 300px;
+    margin-top: -550px;
+    background-color: transparent;
+  }
+
+  .intro__wrapper {
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .intro__slogan {
+    display: block;
+    width: 200px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: $white;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    margin-left: 101px;
+  }
 }

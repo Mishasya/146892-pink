@@ -5,10 +5,7 @@
   padding-top: 45px;
   padding-bottom: 50px;
   text-align: center;
-
-  &--error {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  }
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .modal__title {
@@ -37,4 +34,70 @@
 
 .modal__wrapper {
   @include wrapper-mobile();
+}
+
+@media (max-width: $mobile-width-only) {
+  .modal__text--mobile-only {
+    display: inline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 460px;
+    margin: 0 auto;
+  }
+
+  .modal__btn-wrapper {
+    width: 460px;
+  }
+
+  .modal__title {
+    width: 220px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    width: 310px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .modal__text--mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .modal__btn-wrapper {
+    &--desktop-only {
+      background-color: $white;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+  }
+
+  .modal__wrapper {
+    width: 400px;
+  }
+
+  .modal__title {
+    width: 400px;
+  }
+
+  .modal__btn-wrapper {
+    width: 780px;
+    padding: 50px 0;
+    background-color: $light-grey;
+  }
+
+  .modal__text {
+    width: 380px;
+  }
 }

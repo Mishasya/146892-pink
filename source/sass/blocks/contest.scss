@@ -3,3 +3,15 @@
   flex-wrap: wrap;
   width: 320px;
 }
+
+@media (min-width: $tablet-width) {
+  .contest {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest {
+    width: 1200px;
+  }
+}

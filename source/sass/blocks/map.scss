@@ -1,19 +1,18 @@
-.page-main {
+.map {
   width: 320px;
+  height: 200px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main {
+  .map {
     width: 660px;
+    height: 375px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
+  .map {
     width: 1200px;
-
-    &--form {
-      background-color: $white;
-    }
+    height: 505px;
   }
 }
