@@ -36,7 +36,6 @@
 
         <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </header>
-
       <main class="page-main page-main--form">
         <section class="contest">
           <h2 class="visually-hidden">Шанс выиграть приз</h2>
@@ -46,7 +45,7 @@
 
           <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
 
-            <fieldset class="form-contest__part form-contest__part--padding form-contest__part--order-0">
+            <fieldset class="form-contest__part form-contest__part--order-0">
               <div class="form-contest__inner">
                 <label class="form-contest__label" for="user-surname">Фамилия:</label>
                 <input class="form-contest__input" type="text" id="user-surname" placeholder="Укажите фамилию *">
@@ -113,20 +112,22 @@
               </fieldset>
             </div>
 
-            <fieldset class="form-contest__part form-contest__part--padding form-contest__part--order-2">
+            <fieldset class="form-contest__part form-contest__part--order-2">
               <legend class="form-contest__title form-contest__title--mobile-none">Контактная информация</legend>
-              <div class="form-contest__inner form-contest__inner--info-user">
-                <label class="form-contest__label" for="phone-num">Номер телефона</label>
-                <input class="form-contest__input" type="tel" id="phone-num" placeholder="Номер, пожалуйста">
-              </div>
+              <div class="form-contest__part-inner">
+                <div class="form-contest__inner form-contest__inner--info-user">
+                  <label class="form-contest__label" for="phone-num">Номер телефона</label>
+                  <input class="form-contest__input" type="tel" id="phone-num" placeholder="Номер, пожалуйста">
+                </div>
 
-              <div class="form-contest__inner form-contest__inner--info-user">
-                <label class="form-contest__label" for="mail-add">Адрес почты</label>
-                <input class="form-contest__input" type="email" id="mail-add" placeholder="Введите почту *">
+                <div class="form-contest__inner form-contest__inner--info-user">
+                  <label class="form-contest__label" for="mail-add">Адрес почты</label>
+                  <input class="form-contest__input" type="email" id="mail-add" placeholder="Введите почту *">
+                </div>
               </div>
             </fieldset>
 
-            <div class="form-contest__fieldset-wrapper form-contest__fieldset-wrapper--margin-app form-contest__fieldset-wrapper--order-1">
+            <div class="form-contest__fieldset-wrapper form-contest__fieldset-wrapper--order-1">
               <fieldset class="form-contest__part">
                 <legend class="form-contest__title">С каким приложением путешествовали?</legend>
 
@@ -156,8 +157,8 @@
               </fieldset>
             </div>
 
-            <fieldset class="form-contest__part form-contest__part--margin-btn form-contest__part--order-4">
-              <legend class="form-contest__title form-contest__title--margin-textarea">Опишите свои эмоции</legend>
+            <fieldset class="form-contest__part form-contest__part--order-4">
+              <legend class="form-contest__title">Опишите свои эмоции</legend>
               <textarea class="form-contest__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
             <div class="form-contest__submit-wrapper form-contest__submit-wrapper--order-5">

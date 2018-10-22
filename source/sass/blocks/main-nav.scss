@@ -20,7 +20,7 @@
   position: absolute;
   right: 0;
   width: 50px;
-  height: 25px;
+  min-height: 25px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -30,9 +30,9 @@
   }
 }
 
-// .main-nav--closed .nav-list {
-//   display: none;
-// }
+.main-nav--closed .nav-list {
+  display: none;
+}
 
 .main-nav--nojs .main-nav__trigger {
   display: none;

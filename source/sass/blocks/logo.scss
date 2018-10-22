@@ -1,3 +1,14 @@
 .logo {
   width: 80px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 150px;
+  }
+
+  .logo img:hover {
+    color: $pink;
+  }
+}
+

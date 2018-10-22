@@ -4,11 +4,12 @@
 
 .contacts-list__item {
   width: 280px;
+  margin-bottom: 15px;
 }
 
 .contacts-list__title {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 24px;
   color: $dark-grey;
 }
 
@@ -17,7 +18,7 @@
   margin-bottom: 20px;
   color: $pink;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 300;
 }
 

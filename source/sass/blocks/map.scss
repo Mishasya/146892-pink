@@ -1,6 +1,21 @@
 .map {
+  position: relative;
   width: 320px;
   height: 200px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 37px;
+    background-image: url(../img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.map__frame {
+  border: none;
 }
 
 @media (min-width: $tablet-width) {

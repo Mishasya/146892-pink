@@ -18,6 +18,37 @@
   display: none;
 }
 
+.intro__btn {
+  margin-bottom: 30px;
+}
+
+.intro__icon-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.intro__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50px;
+  height: 60px;
+}
+
+.intro__icon-apple {
+  width: 46.21px;
+  height: 56.753px;
+}
+
+.intro__icon-android {
+  width: 42.084px;
+  height: 47.041px;
+}
+
 @media (min-width: $tablet-width) {
   .intro {
     width: 300px;
