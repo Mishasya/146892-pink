@@ -26,10 +26,14 @@
 
 .modal__btn-wrapper {
   width: 320px;
-  padding-top: 46px;
+  padding-top: 10px;
   padding-bottom: 50px;
   background-color: $light-grey;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+  &--submit {
+    padding-top: 47px;
+  }
 }
 
 .modal__wrapper {

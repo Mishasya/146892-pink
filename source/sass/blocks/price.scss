@@ -45,7 +45,8 @@
   text-transform: uppercase;
 
   &--hit {
-  position: relative;
+    position: relative;
+
     &::before {
       position: absolute;
       content: "";
@@ -53,9 +54,8 @@
       height: 73px;
       top: 0;
       left: -2px;
-      background-image: url(../img/bg-hit.svg);
+      background-image: url("../img/bg-hit.svg");
       background-repeat: no-repeat;
-
     }
 
     &::after {

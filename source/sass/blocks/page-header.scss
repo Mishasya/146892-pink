@@ -33,10 +33,6 @@
   font-weight: 300;
   color: $white;
   text-align: center;
-
-  &--photo {
-    margin-bottom: 85px;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -59,13 +55,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 660px;
+    padding-bottom: 140px;
 
     &--no-hand {
       min-height: 440px;
       background: $dark-grey url("../img/bg-back-tablet@1x.jpg") no-repeat top;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url(../img/bg-back-tablet@2x.jpg);
+        background-image: url("../img/bg-back-tablet@2x.jpg");
         background-size: 1200px auto;
       }
     }

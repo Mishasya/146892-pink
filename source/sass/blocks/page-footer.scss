@@ -1,7 +1,6 @@
 .page-footer {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   width: 320px;
 }
 
@@ -15,7 +14,21 @@
   margin: 0 auto;
 }
 
+.page-footer__logo-academy {
+  fill: $pink;
+
+  &:hover {
+    fill: $dark-grey;
+  }
+
+  &:active {
+    fill: $dark-grey-opacity;
+  }
+}
+
 .page-footer__development {
+  display: flex;
+  justify-content: space-around;
   width: 140px;
   margin: 0 auto;
 }

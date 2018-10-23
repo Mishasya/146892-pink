@@ -4,4 +4,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 180px;
+  margin: 0 auto;
+}
+
+.social-list__item {
+  display: flex;
+  justify-content: center;
+
+  &:nth-child(2) .social-list__link {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &:nth-child(3) .social-list__link {
+    background-image: url("../img/icon-youtube.svg");
+  }
+}
+
+.social-list__link {
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  background-color: $white;
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
