@@ -1,6 +1,6 @@
 .gallery-filter {
   width: 320px;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-bottom: 40px;
   margin: 0 auto;
   background-color: $light-grey;
@@ -10,11 +10,38 @@
   @include wrapper-mobile();
 }
 
+.gallery-filter__set-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gallery-filter__photo {
+  margin: 0;
+  width: 280px;
+  height: 374px;
+}
+
+.gallery-filter__icon {
+  @include toggle-btn-reset();
+  margin-left: 35px;
+  margin-top: 37px;
+  margin-bottom: 25px;
+
+  &--fill {
+    margin-top: 45px;
+  }
+}
+
+.gallery-filter__svg {
+  fill: $dark-grey-opacity;
+}
+
 .gallery-filter__range {
   position: relative;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 67px;
+  margin-bottom: 74px;
 
   &::after {
     content: "";
@@ -50,6 +77,10 @@
   }
 }
 
+.gallery-filter__btn {
+  margin-bottom: 13px;
+}
+
 .gallery-filter .btn--round-off {
   margin-bottom: 12px;
 }
@@ -74,12 +105,18 @@
 
   .gallery-filter__photo {
     width: 300px;
-    height: 400px;//временно
-    border: 1px solid #000000;//временно
   }
 
   .gallery-filter__set-wrapper {
     width: 275px;
+  }
+
+  .gallery-filter__svg:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  .gallery-filter__svg:active {
+    fill: $pink;
   }
 
   .gallery-filter__range {

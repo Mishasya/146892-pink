@@ -51,12 +51,13 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    width: 300px;
-    margin-top: -550px;
+    width: 340px;
+    margin-top: -553px;
     background-color: transparent;
   }
 
   .intro__wrapper {
+    width: 300px;
     margin: 0 20px;
     text-align: center;
   }
@@ -65,10 +66,25 @@
     display: block;
     width: 200px;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     font-weight: 300;
     color: $white;
     margin: 0 auto;
+    margin-bottom: 31px;
+  }
+
+  .intro__btn {
+    width: 294px;
+    margin-bottom: 41px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .intro__icon-inner {
+    margin-bottom: 36px;
   }
 }
 
