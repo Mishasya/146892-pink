@@ -75,25 +75,62 @@
   .information__list-wrapper {
     width: 660px;
     padding: 0;
-    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 70px;
+    padding-bottom: 7px;
     background-color: $light-grey;
     background-image: url("../img/iphone-screen-3-tablet@1x.png"),
       url("../img/bg-triangle-white.svg");
     background-size: auto, 100%;
-    background-position: bottom left, top;
+    background-position: 20px 0, top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png"),
+        url("../img/bg-triangle-white.svg");
+      background-size: 268px auto, 100%;
+    }
   }
 
   .information__effect {
     @include wrapper-tablet();
+    position: relative;
     display: flex;
-    padding-top: 57px;
-    padding-bottom: 65px;
+    padding-top: 98px;
+    padding-bottom: 27px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 240px 276px;
+    background-position: bottom left;
+
+    &::before {
+      content: "24";
+      position: absolute;
+      bottom: 20px;
+      left: 19px;
+      width: 174px;
+      height: 174px;
+      background-color: $white;
+      border: 14px solid $pink;
+      border-radius: 50%;
+      font-size: 96px;
+      line-height: 163px;
+      font-weight: 700;
+      color: $pink;
+      text-align: center;
+    }
+  }
+
+  .information__slogan {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .information__text:nth-child(1) {
+    margin-bottom: 1px;
   }
 
   .information__effect-wrapper {
     width: 296px;
-    margin-left: auto;
+    margin-left: 310px;
   }
 
   .information__title {
@@ -103,7 +140,7 @@
   }
 
   .information__indent {
-    margin: 0;
+    margin: 10px 0;
   }
 }
 
