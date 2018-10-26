@@ -24,7 +24,25 @@
   display: none;
 }
 
-.logo__pink-footer {
+.logo__footer {
+  width: 150px;
+}
+
+.logo__footer {
+  fill: $dark-grey;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: $dark-grey;
+    opacity: 0.3;
+  }
+}
+
+.logo__footer--desktop {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,6 +57,10 @@
   .logo__header--tablet {
     display: inline-block;
   }
+
+  .logo__footer--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -47,6 +69,14 @@
   }
 
   .logo__header--desktop {
+    display: inline-block;
+  }
+
+  .logo__footer--mobile {
+    display: none;
+  }
+
+  .logo__footer--desktop {
     display: inline-block;
   }
 }

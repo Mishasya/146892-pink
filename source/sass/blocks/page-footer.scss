@@ -1,6 +1,4 @@
 .page-footer {
-  display: flex;
-  flex-wrap: wrap;
   width: 320px;
 }
 
@@ -41,5 +39,38 @@
 @media (max-width: $mobile-width-only) {
   .page-footer--mobile-only {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 660px;
+    padding: 35px 0;
+  }
+
+  .page-footer__wrapper {
+    @include wrapper-tablet();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    // margin-right: 70px;
+  }
+
+  .page-footer__development {
+    margin: 0;
+    width: 130px;
+  }
+
+  .page-footer__developer {
+    margin-right: 15px;
+  }
+
+  .page-footer__link-htmlacademy {
+    display: block;
+    padding-top: 12px;
   }
 }
