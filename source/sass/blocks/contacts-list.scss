@@ -26,15 +26,21 @@
   .contacts-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .contacts-list__item {
-    width: 310px;
+    width: 300px;
+    margin-bottom: 24px;
 
     &:nth-child(3) {
       width: 298px;
       margin: 0 auto;
     }
+  }
+
+  .contacts-list__info {
+    line-height: 33px;
   }
 }
 

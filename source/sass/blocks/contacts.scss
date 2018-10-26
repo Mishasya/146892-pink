@@ -31,6 +31,12 @@
 
   .contacts__wrapper {
     @include wrapper-tablet();
+    padding-top: 47px;
+    padding-bottom: 5px;
+  }
+
+  .contacts__intro {
+    margin-bottom: 42px;
   }
 
   .contacts__text {
@@ -48,3 +54,5 @@
     @include wrapper-desktop();
   }
 }
+
+

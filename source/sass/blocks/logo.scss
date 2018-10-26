@@ -2,12 +2,51 @@
   width: 80px;
 }
 
+.logo__header {
+  fill: $white;
+}
+
+.logo__header a[href] {
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3)
+  }
+}
+
+.logo__header--tablet {
+  display: none;
+}
+
+.logo__header--desktop {
+  display: none;
+}
+
+.logo__pink-footer {
+}
+
 @media (min-width: $tablet-width) {
   .logo {
     width: 150px;
   }
 
-  .logo img:hover {
-    color: $pink;
+  .logo__header--mobile {
+    display: none;
+  }
+
+  .logo__header--tablet {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__header--tablet {
+    display: none;
+  }
+
+  .logo__header--desktop {
+    display: inline-block;
   }
 }
