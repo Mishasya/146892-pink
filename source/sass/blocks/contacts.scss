@@ -36,18 +36,18 @@
   }
 
   .contacts__intro {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
 
   .contacts__text {
     font-size: 40px;
-    line-height: 46px;
+    line-height: 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: 1200px;
+    width: 960px;
   }
 
   .contacts__wrapper {

@@ -64,6 +64,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .logo {
+    height: 54px;
+  }
+
   .logo__header--tablet {
     display: none;
   }

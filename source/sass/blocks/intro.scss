@@ -1,6 +1,8 @@
 .intro {
   width: 320px;
   background-color: $dark-grey;
+  padding-top: 27px;
+  padding-bottom: 30px;
 }
 
 .intro__wrapper {
@@ -9,8 +11,8 @@
 
 .intro__text {
   margin: 0;
-  margin-top: 20px;
   color: $white;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -28,6 +30,7 @@
   justify-content: space-between;
   width: 210px;
   margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 .intro__img {
@@ -51,8 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    width: 340px;
-    margin-top: -553px;
+    width: 660px;
     background-color: transparent;
   }
 
@@ -90,6 +92,28 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-left: 101px;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: -659px;
+  }
+
+  .intro__wrapper {
+    margin-left: 0;
+  }
+
+  .intro__slogan {
+    width: 300px;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 52px;
+  }
+
+  .intro__btn {
+    font-size: 21px;
+    margin-bottom: 63px;
+  }
+
+  .intro__icon-inner {
+    margin-bottom: 55px;
   }
 }

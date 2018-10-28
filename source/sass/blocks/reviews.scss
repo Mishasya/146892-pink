@@ -79,13 +79,25 @@
   }
 }
 
+@media (max-width: $desktop-width) {
+  .reviews__controls-arrow {
+    display: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 1200px;
+    width: 960px;
+    padding-top: 185px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 85px 65px;
+    background-position: 558px 71px;
   }
 
   .reviews__wrapper {
     @include wrapper-desktop();
+    position: relative;
   }
 
   .reviews__list {
@@ -103,5 +115,44 @@
 
   .reviews__list-text {
     font-size: 18px;
+  }
+
+  .reviews__list-info {
+    font-size: 18px;
+  }
+
+  .reviews__list-autor {
+    font-size: 24px;
+  }
+
+  .reviews__controls-arrow {
+    @include toggle-btn-reset();
+    position: absolute;
+    width: 25px;
+    height: 45px;
+    opacity: 0.3;
+
+    &--left {
+      top: 28px;
+      left: 10px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--right {
+      top: 28px;
+      right: 10px;
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+    }
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
