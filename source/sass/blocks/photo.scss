@@ -61,7 +61,7 @@
 
 .photo__likes {
   position: relative;
-  padding-left: 30px;
+  padding-left: 32px;
 
   &::before {
     content: "";
@@ -106,14 +106,19 @@
     }
   }
 
+  .photo__slogan {
+    top: 58px;
+  }
+
   .photo__content {
     display: flex;
     flex-direction: column;
     width: 264px;
-    min-height: 50px;
+    padding-top: 25px;
+    padding-left: 27px;
 
     &--main {
-      width: 584px;
+      width: 576px;
       margin: 0 auto;
     }
   }

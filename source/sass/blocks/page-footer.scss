@@ -1,5 +1,10 @@
 .page-footer {
   width: 320px;
+  padding-top: 14px;
+
+  &--photo {
+    padding-top: 41px;
+  }
 }
 
 .page-footer__wrapper {
@@ -10,6 +15,7 @@
   display: block;
   width: 150px;
   margin: 0 auto;
+  margin-bottom: 33px;
 }
 
 .page-footer__logo-academy {

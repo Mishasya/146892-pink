@@ -87,12 +87,12 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 960px;
-    padding-top: 185px;
+    width: 100%;
+    padding-top: 183px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-size: 85px 65px;
-    background-position: 558px 71px;
+    background-position: 50% 69px;
   }
 
   .reviews__wrapper {
@@ -141,7 +141,7 @@
 
     &--right {
       top: 28px;
-      right: 10px;
+      right: 7px;
       background-image: url("../img/icon-review-arrow-right.svg");
       background-repeat: no-repeat;
     }

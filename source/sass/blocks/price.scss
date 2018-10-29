@@ -187,11 +187,12 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    width: 960px;
+    width: 100%;
     padding-top: 154px;
+    padding-bottom: 97px;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-size: 960px;
+    background-size: 100%;
     background-position: 0 0;
   }
 
@@ -211,7 +212,12 @@
 
     &--hit {
       &::before {
-        background-size: 75px;
+        background-size: 73px 72px;
+      }
+
+      &::after {
+        top: 9px;
+        left: 10px;
       }
     }
   }
@@ -222,9 +228,21 @@
 
   .price__table-desc {
     width: 200px;
+    padding: 14px;
+    padding-left: 22px;
 
     &--no-mobile {
       font-size: 18px;
     }
+  }
+
+  .price__svg-yes {
+    top: 37%;
+    left: 44%;
+  }
+
+  .price__svg-no {
+    top: 31%;
+    left: 45%;
   }
 }

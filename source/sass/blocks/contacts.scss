@@ -47,11 +47,25 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: 960px;
+    width: 100%;
+    padding-top: 67px;
   }
 
   .contacts__wrapper {
     @include wrapper-desktop();
+  }
+
+  .contacts__text {
+    font-size: 50px;
+    line-height: 59px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__intro {
+    margin-bottom: 57px;
   }
 }
 
