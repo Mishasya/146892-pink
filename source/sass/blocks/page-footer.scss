@@ -63,7 +63,6 @@
 
   .page-footer__logo {
     margin: 0;
-    // margin-right: 70px;
   }
 
   .page-footer__development {
@@ -78,5 +77,24 @@
   .page-footer__link-htmlacademy {
     display: block;
     padding-top: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 100%;
+    padding: 70px 0;
+  }
+  .page-footer__wrapper {
+    @include wrapper-desktop();
+  }
+
+  .page-footer__development {
+    width: 150px;
+  }
+
+  .page-footer__developer {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

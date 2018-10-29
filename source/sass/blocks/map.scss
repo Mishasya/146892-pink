@@ -27,7 +27,11 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    width: 960px;
+    width: 100%;
     height: 505px;
+
+    &::before {
+      top: -1px;
+    }
   }
 }

@@ -116,16 +116,41 @@
     width: 264px;
     padding-top: 25px;
     padding-left: 27px;
+    min-height: 105px;
+    padding-bottom: 24px;
 
     &--main {
+      position: relative;
       width: 576px;
       margin: 0 auto;
+      padding-bottom: 24px;
+      min-height: 0;
     }
+  }
+
+  .photo__content--main .photo__likes {
+    position: absolute;
+    top: 26px;
+    right: 60px;
+
+    &::before {
+      top: 5px;
+      left: 106px;
+    }
+  }
+
+  .photo__content--main .photo__text {
+    margin-bottom: 0;
   }
 
   .photo__likes {
     margin-top: auto;
     padding-left: 0;
+
+    &::before {
+      top: 7px;
+      left: 227px;
+    }
   }
 }
 
@@ -146,6 +171,9 @@
   }
 
   .photo__content {
+    display: flex;
+    flex-wrap: wrap;
+
     &--main {
       @include wrapper-desktop();
     }

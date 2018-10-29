@@ -77,6 +77,18 @@
   }
 }
 
+.gallery-filter__svg:hover {
+  fill: rgba(40, 54, 69, 0.5);
+}
+
+.gallery-filter__svg:active {
+  fill: $pink;
+}
+
+.gallery-filter__icon:nth-child(1) .gallery-filter__svg {
+  fill: $pink;
+}
+
 .gallery-filter__btn {
   margin-bottom: 13px;
 }
@@ -94,6 +106,7 @@
 @media (min-width: $tablet-width) {
   .gallery-filter {
     width: 660px;
+    padding-top: 56px;
   }
 
   .gallery-filter__wrapper {
@@ -105,22 +118,31 @@
 
   .gallery-filter__photo {
     width: 300px;
+    height: 400px;
+  }
+
+  .gallery-filter__svg {
+    width: 23px;
+    height: 23px;
+    fill: $pink;
   }
 
   .gallery-filter__set-wrapper {
     width: 275px;
   }
 
-  .gallery-filter__svg:hover {
-    fill: rgba(40, 54, 69, 0.5);
-  }
+  .gallery-filter__icon {
+    margin: 0;
 
-  .gallery-filter__svg:active {
-    fill: $pink;
+    &--fill {
+      width: 26px;
+      height: 26px;
+    }
   }
 
   .gallery-filter__range {
     width: 275px;
+    margin-bottom: 0;
 
     &::after {
       content: "";
