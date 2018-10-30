@@ -58,7 +58,7 @@
   }
 
   &--upload {
-    width: 261px;
+    width: 278px;
     border: 3px solid $pink;
     border-radius: 40px;
     padding: 15px 0;
@@ -68,8 +68,12 @@
     font-size: 18px;
     line-height: 18px;
 
-    @media (max-width: $mobile-width-only) {
-      width: 278px;
+    @media (min-width: $tablet-width) {
+      width: 261px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 150px;
     }
 
     &:hover {
@@ -83,7 +87,7 @@
   }
 
   &--cancel {
-    width: 261px;
+    width: 278px;
     border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 40px;
     padding: 15px 0;
@@ -92,9 +96,14 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+    flex-shrink: 0;
 
-    @media (max-width: $mobile-width-only) {
-      width: 278px;
+    @media (min-width: $tablet-width) {
+      width: 261px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 150px;
     }
 
     &:hover {

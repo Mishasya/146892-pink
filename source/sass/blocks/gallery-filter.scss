@@ -134,8 +134,12 @@
   }
 
   .gallery-filter__icon {
+    position: absolute;
     top: 9px;
     left: 2px;
+    margin: 0;
+    width: 23px;
+    height: 23px;
 
     &--fill {
       top: 83px;
@@ -146,13 +150,6 @@
       top: 154px;
       left: 5px;
     }
-  }
-
-  .gallery-filter__icon {
-    position: absolute;
-    margin: 0;
-    width: 23px;
-    height: 23px;
 
     &--contrast .gallery-filter__svg {
       width: 17px;
@@ -209,15 +206,20 @@
     }
   }
 
+  .gallery-filter__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 252px;
+  }
+
   .gallery-filter__btn {
-    margin-top: 255px;
-    margin-bottom: 1px;
+    margin-bottom: 23px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery-filter {
-    width: 960px;
+    width: 100%;
     background-color: $white;
     padding-top: 68px;
   }
@@ -234,14 +236,63 @@
   }
 
   .gallery-filter__range {
-    width: 410px;
+    width: 366px;
 
     &::after {
       width: 410px;
+    }
+
+    &--last {
+      margin-bottom: 50px;
     }
   }
 
   .gallery-filter__scale {
     width: 290px;
+  }
+
+  .gallery-filter__toggle {
+    left: 131px;
+
+    &--two {
+      left: 307px;
+    }
+
+    &--three {
+      left: 220px;
+      top: -6px;
+    }
+  }
+
+  .gallery-filter__svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .gallery-filter__icon {
+    width: 48px;
+    height: 48px;
+    top: -4px;
+    left: 18px;
+
+    &--fill {
+      top: 71px;
+      left: 20px;
+    }
+
+    &--contrast {
+      top: 141px;
+    }
+  }
+
+  .gallery-filter__icon--contrast .gallery-filter__svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .gallery-filter__btn-wrapper {
+    margin-top: 250px;
+    justify-content: space-between;
+    flex-shrink: 0;
   }
 }
