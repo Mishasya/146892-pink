@@ -119,6 +119,7 @@
   .gallery-filter__photo {
     width: 300px;
     height: 400px;
+    padding-bottom: 13px;
   }
 
   .gallery-filter__svg {
@@ -128,31 +129,63 @@
   }
 
   .gallery-filter__set-wrapper {
+    position: relative;
     width: 275px;
   }
 
   .gallery-filter__icon {
-    margin: 0;
+    top: 9px;
+    left: 2px;
 
     &--fill {
-      width: 26px;
-      height: 26px;
+      top: 83px;
+      left: 3px;
+    }
+
+    &--contrast {
+      top: 154px;
+      left: 5px;
+    }
+  }
+
+  .gallery-filter__icon {
+    position: absolute;
+    margin: 0;
+    width: 23px;
+    height: 23px;
+
+    &--contrast .gallery-filter__svg {
+      width: 17px;
+      height: 17px;
     }
   }
 
   .gallery-filter__range {
-    width: 275px;
-    margin-bottom: 0;
+    position: absolute;
+    top: 19px;
+    left: 52px;
+    width: 205px;
+    margin-bottom: 34px;
+    margin-right: 18px;
 
     &::after {
       content: "";
       position: absolute;
-      left: 0;
+      left: -51px;
       width: 275px;
       height: 1px;
-      margin-top: 36px;
+      margin-top: 34px;
       margin-bottom: 25px;
       background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &--second {
+      top: 92px;
+    }
+
+    &--last {
+      top: 162px;
+      margin-bottom: 50px;
     }
   }
 
@@ -160,12 +193,33 @@
     width: 205px;
     margin-right: 18px;
   }
+
+  .gallery-filter__toggle {
+    top: -5px;
+    left: 151px;
+
+    &--two {
+      top: -6px;
+      left: 29px;
+    }
+
+    &--three {
+      top: -7px;
+      left: 100px;
+    }
+  }
+
+  .gallery-filter__btn {
+    margin-top: 255px;
+    margin-bottom: 1px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .gallery-filter {
     width: 960px;
     background-color: $white;
+    padding-top: 68px;
   }
 
   .gallery-filter__wrapper {

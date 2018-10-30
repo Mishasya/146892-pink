@@ -58,7 +58,7 @@
   }
 
   &--upload {
-    width: 278px;
+    width: 261px;
     border: 3px solid $pink;
     border-radius: 40px;
     padding: 15px 0;
@@ -67,6 +67,10 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+
+    @media (max-width: $mobile-width-only) {
+      width: 278px;
+    }
 
     &:hover {
       background-color: $pink;
@@ -79,7 +83,7 @@
   }
 
   &--cancel {
-    width: 278px;
+    width: 261px;
     border: 3px solid rgba(40, 54, 69, 0.1);
     border-radius: 40px;
     padding: 15px 0;
@@ -88,6 +92,10 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+
+    @media (max-width: $mobile-width-only) {
+      width: 278px;
+    }
 
     &:hover {
       background-color: transparent;

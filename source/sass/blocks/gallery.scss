@@ -51,10 +51,15 @@
 
 @media (min-width: $desktop-width) {
   .gallery {
-    width: 960px;
+    width: 100%;
   }
 
   .gallery__wrapper {
     @include wrapper-desktop();
+  }
+
+  .gallery__slogan {
+    @include wrapper-desktop();
+    padding-top: 3px;
   }
 }

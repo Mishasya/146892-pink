@@ -90,14 +90,6 @@
     width: 100%;
     min-height: 853px;
     background: transparent;
-    /* background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 314px bottom; */
-
-    /* @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-desktop@2x.png");
-      background-size: 1050px auto;
-    } */
   }
 
   .page-header {
@@ -119,6 +111,7 @@
 
     &--photo {
       width: 355px;
+      padding-bottom: 65px;
     }
   }
 }

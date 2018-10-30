@@ -46,11 +46,14 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    @include wrapper-desktop();
+    width: 100%;
+
+    &--photo {
+      padding-bottom: 88px;
+    }
   }
 
   .promo__text {
     width: 620px;
-    padding: 90px 0;
   }
 }
