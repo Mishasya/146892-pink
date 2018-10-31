@@ -35,6 +35,11 @@
       padding-top: 92px;
       padding-bottom: 75px;
     }
+
+    &--form {
+      padding-top: 92px;
+      padding-bottom: 71px;
+    }
   }
 
   .promo__text {
@@ -51,9 +56,18 @@
     &--photo {
       padding-bottom: 88px;
     }
+
+    &--form {
+      padding-top: 91px;
+      padding-bottom: 85px;
+    }
   }
 
   .promo__text {
     width: 620px;
+  }
+
+  .promo--form .promo__text {
+    width: 804px;
   }
 }

@@ -1,6 +1,9 @@
 .nav-list {
   @include list-reset();
   width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .nav-list__link {
@@ -17,8 +20,13 @@
   text-decoration: none;
   color: $white;
 
-  &:active {
+  &:hover,
+  &:focus {
     color: $pink;
+  }
+
+  &:active {
+    color: $pink-opacity;
   }
 }
 
@@ -26,20 +34,9 @@
   .nav-list {
     width: 660px;
   }
-
-  // .nav-list__link {
-  //   width: 660px;
-  // }
 }
 
 @media (min-width: $desktop-width) {
-  .nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 625px;
-  }
-
   .nav-list__item {
     margin-right: 80px;
 

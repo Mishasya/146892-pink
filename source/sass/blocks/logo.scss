@@ -6,7 +6,9 @@
   fill: $white;
 }
 
-.logo__header a[href] {
+.logo[href] .logo__header {
+  fill: $white;
+
   &:hover {
     fill: $pink;
   }

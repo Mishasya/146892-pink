@@ -52,6 +52,10 @@
   .page-footer {
     width: 660px;
     padding: 35px 0;
+
+    &--form {
+      padding: 15px 0;
+    }
   }
 
   .page-footer__wrapper {
@@ -84,6 +88,14 @@
   .page-footer {
     width: 100%;
     padding: 70px 0;
+
+    &--photo {
+      padding: 59px 0;
+    }
+
+    &--form {
+      padding: 37px 0;
+    }
   }
   .page-footer__wrapper {
     @include wrapper-desktop();

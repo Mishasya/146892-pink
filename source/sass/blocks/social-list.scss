@@ -32,6 +32,14 @@
   background-position: center;
 }
 
+.social-list__link:hover {
+  border-color: $dark-grey;
+}
+
+.social-list__link:active {
+  opacity: 0.1;
+}
+
 @media (min-width: $tablet-width) {
   .social-list {
     margin: 0;

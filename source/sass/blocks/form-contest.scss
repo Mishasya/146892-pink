@@ -87,6 +87,7 @@
 }
 
 .form-contest__item {
+  margin: 0;
   margin-bottom: 46px;
 
   &--radio {
@@ -96,6 +97,14 @@
 
 .form-contest__item:last-child {
   margin-bottom: 0;
+}
+
+.form-contest__check {
+  margin-bottom: 46px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form-contest__label-check {
@@ -207,18 +216,28 @@
 
     &--order-2 {
       order: 2;
+      padding-top: 0;
+      padding-bottom: 26px;
+      margin-bottom: 58px;
     }
 
     &--order-4 {
-      margin-bottom: 65px;
+      margin-bottom: 67px;
       order: 4;
+      padding-top: 22px;
     }
   }
+
+  .form-contest__part--order-2 .form-contest__title {
+    margin-bottom: 35px;
+  }
+
 
   .form-contest__inner {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 51px;
 
     &--info-user {
       position: relative;
@@ -230,8 +249,17 @@
     width: 100%;
   }
 
+  .form-contest__inner--info-user {
+    margin-bottom: 28px;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
   .form-contest__inner--info-user .form-contest__label {
     padding-left: 20px;
+    padding-top: 10px;
 
     &::after {
       content: "";
@@ -240,7 +268,7 @@
       right: 2px;
       width: 60px;
       height: 60px;
-      background: $shade-of-grey url("../../img/icon-mail.svg") no-repeat center;
+      background: $shade-of-grey url("../../img/icon-phone.svg") no-repeat center;
     }
   }
 
@@ -254,7 +282,7 @@
       right: 2px;
       width: 60px;
       height: 60px;
-      background: $shade-of-grey url("../../img/icon-phone.svg") no-repeat center;
+      background: $shade-of-grey url("../../img/icon-mail.svg") no-repeat center;
     }
   }
 
@@ -279,10 +307,25 @@
 
   .form-contest__fieldset-wrapper--order-1 {
     order: 1;
+    padding-top: 6px;
+  }
+
+  .form-contest__fieldset-wrapper--order-1 .form-contest__title {
+    margin-bottom: -3px;
+  }
+
+  .form-contest__fieldset-wrapper--order-1 .form-contest__part {
+    padding-bottom: 58px;
   }
 
   .form-contest__fieldset-wrapper--order-3 {
     order: 3;
+    padding-top: 0;
+    margin-bottom: 38px;
+  }
+
+  .form-contest__fieldset-wrapper--order-3 .form-contest__title {
+    margin-bottom: -7px;
   }
 
   .form-contest__submit-wrapper--order-5 {
@@ -292,18 +335,28 @@
     order: 5;
   }
 
+  .form-contest__label-check {
+    padding-left: 57px;
+  }
+
   .form-contest__submit-btn {
+    width: 300px;
     margin: 0;
     margin-bottom: 33px;
   }
 
   .form-contest__textarea {
     width: 452px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-right: 24px;
+    padding-bottom: 12px;
   }
 
   .form-contest__foot-text {
-    width: 185px;
+    width: 182px;
     margin: 0;
+    margin-top: 19px;
   }
 }
 
@@ -329,17 +382,23 @@
 
     &--order-2 {
       width: 100%;
+      padding-bottom: 13px;
+      margin-bottom: 57px;
     }
 
     &--order-4 {
       width: 100%;
+      padding: 0 60px;
+      padding-bottom: 44px;
+      margin-bottom: 63px;
     }
   }
 
   .form-contest__fieldset-wrapper {
     &--order-1 {
-      width: 436px;
+      width: 435px;
       padding-top: 0;
+      margin-top: -13px;
     }
 
     &--order-3 {
@@ -352,8 +411,19 @@
     justify-content: space-between;
   }
 
+  .form-contest__part--order-4 .form-contest__title {
+    margin-bottom: 33px;
+  }
+
   .form-contest__fieldset-wrapper--order-1 .form-contest__part {
-    width: 312px;
+    width: 321px;
+    padding-right: 0;
+    padding-left: 75px;
+  }
+
+  .form-contest__fieldset-wrapper--order-1 .form-contest__title {
+    width: 332px;
+    padding: 0 12px;
   }
 
   .form-contest__inner--info-user {
@@ -361,8 +431,18 @@
     margin: 0;
   }
 
+  .form-contest__inner--info-user .form-contest__label {
+    padding-top: 8px;
+  }
+
   .form-contest__fieldset-wrapper--order-3 .form-contest__part {
-    width: 836px;
+    width: 876px;
+    padding-right: 0;
+    padding-bottom: 13px;
+  }
+
+  .form-contest__item--radio {
+    width: 200px;
   }
 
   .form-contest__list {
@@ -371,12 +451,23 @@
     justify-content: space-between;
   }
 
-  .form-contest__item {
-    width: 260px;
+  .form-contest__check {
+    width: 251px;
+    margin-right: 53px;
+
+    &:nth-child(2) {
+      margin-right: 36px;
+    }
+
+    &:last-child {
+      margin-right: 17px;
+    }
   }
 
   .form-contest__textarea {
-    width: 793px;
+    width: 772px;
+    min-height: 97px;
+    padding-left: 18px;
   }
 
   .form-contest__submit-wrapper {
@@ -386,6 +477,6 @@
   }
 
   .form-contest__foot-text {
-    width: 320px;
+    width: 314px;
   }
 }

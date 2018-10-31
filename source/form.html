@@ -11,12 +11,14 @@
     <header class="page-header page-header--no-hand">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <a class="logo">
-            <svg class="logo__header logo__header--desktop" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use></svg>
-            <svg class="logo__header logo__header--tablet" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use></svg>
-            <svg class="logo__header logo__header--mobile" width="74.426px" height="22.859px"><use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use></svg>
-          </a>
-          <button class="main-nav__trigger" type="button" aria-label="Главное меню"></button>
+          <div class="main-nav__inner">
+            <a class="logo" href="index.html">
+              <svg class="logo__header logo__header--desktop" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use></svg>
+              <svg class="logo__header logo__header--tablet" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use></svg>
+              <svg class="logo__header logo__header--mobile" width="74.426px" height="22.859px"><use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use></svg>
+            </a>
+            <button class="main-nav__trigger" type="button" aria-label="Главное меню"></button>
+          </div>
 
           <ul class="main-nav__list nav-list nav-list--display-none">
             <li class="nav-list__item">
@@ -29,7 +31,7 @@
               <a class="nav-list__link">Конкурс</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -41,7 +43,7 @@
       <section class="contest">
         <h2 class="visually-hidden">Шанс выиграть приз</h2>
         <div class="promo promo--form">
-          <p class="promo__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!<span class="promo__text--mobile-none">Пожалуйста, заполните форму ниже:</span></p>
+          <p class="promo__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту! <span class="promo__text--mobile-none">Пожалуйста, заполните форму ниже:</span></p>
         </div>
 
         <form class="form-contest" action="https://echo.htmlacademy.ru" method="post">
@@ -66,50 +68,56 @@
           <div class="form-contest__fieldset-wrapper form-contest__fieldset-wrapper--order-3">
             <fieldset class="form-contest__part">
               <legend class="form-contest__title">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form-contest__list">
-                <li class="form-contest__item">
-                  <label class="form-contest__label-check">
-                    <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="photo" checked>
-                    <span class="form-contest__input-indicator"></span>
-                    Сделал селфи с акулой
-                  </label>
-                </li>
-                <li class="form-contest__item">
-                  <label class="form-contest__label-check">
-                    <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="beach" checked>
-                    <span class="form-contest__input-indicator"></span>
-                    Обгорел на пляже
-                  </label>
-                </li>
-                <li class="form-contest__item">
-                  <label class="form-contest__label-check">
-                    <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="actor">
-                    <span class="form-contest__input-indicator"></span>
-                    Видел Чака Норриса
-                  </label>
-                </li>
-                <li class="form-contest__item">
-                  <label class="form-contest__label-check">
-                    <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="souvenir">
-                    <span class="form-contest__input-indicator"></span>
-                    Накупил сувениров
-                  </label>
-                </li>
-                <li class="form-contest__item">
-                  <label class="form-contest__label-check">
-                    <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="tower" checked>
-                    <span class="form-contest__input-indicator"></span>
-                    Удержал башню
-                  </label>
-                </li>
-                <li class="form-contest__item">
-                  <label class="form-contest__label-check">
-                    <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="hotel">
-                    <span class="form-contest__input-indicator"></span>
-                    Разгромил отель
-                  </label>
-                </li>
-              </ul>
+              <div class="form-contest__list">
+                <div class="form-contest__check">
+                  <p class="form-contest__item">
+                    <label class="form-contest__label-check">
+                      <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="photo" checked>
+                      <span class="form-contest__input-indicator"></span>
+                      Сделал селфи с акулой
+                    </label>
+                  </p>
+                  <p class="form-contest__item">
+                    <label class="form-contest__label-check">
+                      <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="beach" checked>
+                      <span class="form-contest__input-indicator"></span>
+                      Обгорел на пляже
+                    </label>
+                  </p>
+                </div>
+                <div class="form-contest__check">
+                  <p class="form-contest__item">
+                    <label class="form-contest__label-check">
+                      <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="actor">
+                      <span class="form-contest__input-indicator"></span>
+                      Видел Чака Норриса
+                    </label>
+                  </p>
+                  <p class="form-contest__item">
+                    <label class="form-contest__label-check">
+                      <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="souvenir">
+                      <span class="form-contest__input-indicator"></span>
+                      Накупил сувениров
+                    </label>
+                  </p>
+                </div>
+                <div class="form-contest__check">
+                  <p class="form-contest__item">
+                    <label class="form-contest__label-check">
+                      <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="tower" checked>
+                      <span class="form-contest__input-indicator"></span>
+                      Удержал башню
+                    </label>
+                  </p>
+                  <p class="form-contest__item">
+                    <label class="form-contest__label-check">
+                      <input class="visually-hidden form-contest__hidden-input" type="checkbox" name="hotel">
+                      <span class="form-contest__input-indicator"></span>
+                      Разгромил отель
+                    </label>
+                  </p>
+                </div>
+              </div>
             </fieldset>
           </div>
 
@@ -170,7 +178,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
         <a class="logo page-footer__logo" href="index.html">
           <svg class="logo__footer logo__footer--desktop" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use></svg>

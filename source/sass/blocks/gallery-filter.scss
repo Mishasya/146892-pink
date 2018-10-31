@@ -225,10 +225,12 @@
   }
 
   .gallery-filter__wrapper {
-    width: 780px;
+    width: 800px;
     margin: 0 auto;
     background-color: $light-grey;
     padding: 55px 80px;
+    padding-bottom: 44px;
+    padding-right: 60px;
   }
 
   .gallery-filter__set-wrapper {
@@ -237,6 +239,7 @@
 
   .gallery-filter__range {
     width: 366px;
+    left: 33px;
 
     &::after {
       width: 410px;
@@ -252,7 +255,7 @@
   }
 
   .gallery-filter__toggle {
-    left: 131px;
+    left: 130px;
 
     &--two {
       left: 307px;
@@ -273,11 +276,11 @@
     width: 48px;
     height: 48px;
     top: -4px;
-    left: 18px;
+    left: -2px;
 
     &--fill {
       top: 71px;
-      left: 20px;
+      left: 0;
     }
 
     &--contrast {
@@ -290,9 +293,13 @@
     height: 32px;
   }
 
+  .gallery-filter__btn {
+    margin: 0;
+  }
+
   .gallery-filter__btn-wrapper {
-    margin-top: 250px;
+    width: 410px;
+    margin-top: 330px;
     justify-content: space-between;
-    flex-shrink: 0;
   }
 }
