@@ -14,12 +14,23 @@
 }
 
 .contacts-list__info {
-  margin: 0;
+  display: block;
   margin-bottom: 20px;
   color: $pink;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $dark-grey;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: $dark-grey-opacity;
+  }
 }
 
 @media (min-width: $tablet-width) {
