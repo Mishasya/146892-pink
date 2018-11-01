@@ -9,17 +9,12 @@
   }
 }
 
-/* .main-nav__wrapper {
-  display: flex;
-  align-items: center;
-} */
-
 .main-nav__inner {
   @include wrapper-mobile();
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 55px;
+  min-height: 70px;
 }
 
 .main-nav__list {
