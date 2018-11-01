@@ -1430,8 +1430,8 @@
     pf.fillImg = noop;
   } else {
 
-     // Set up picture polyfill by polling the document
-    (function() {
+    // Set up picture polyfill by polling the document
+    function() {
       var isDomReady;
       var regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
 

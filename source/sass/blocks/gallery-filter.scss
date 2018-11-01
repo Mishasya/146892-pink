@@ -86,14 +86,6 @@
   }
 }
 
-.gallery-filter__svg:hover {
-  fill: rgba(40, 54, 69, 0.5);
-}
-
-.gallery-filter__svg:active {
-  fill: $pink;
-}
-
 .gallery-filter__icon:nth-child(1) .gallery-filter__svg {
   fill: $pink;
 }

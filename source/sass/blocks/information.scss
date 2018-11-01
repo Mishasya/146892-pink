@@ -56,6 +56,8 @@
     position: relative;
     width: 620px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .information__text {
@@ -99,11 +101,6 @@
     display: flex;
     padding-top: 0;
     padding-bottom: 27px;
-  }
-
-  .information__slogan {
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .information__text:nth-child(1) {
@@ -167,7 +164,6 @@
     width: 820px;
     padding-top: 72px;
     padding-bottom: 67px;
-
   }
 
   .information__text {

@@ -251,19 +251,16 @@
     &--info-user {
       position: relative;
       flex-direction: column-reverse;
+      margin-bottom: 28px;
+
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
     }
   }
 
   .form-contest__inner--info-user .form-contest__input {
     width: 100%;
-  }
-
-  .form-contest__inner--info-user {
-    margin-bottom: 28px;
-
-    &:nth-child(2) {
-      margin-bottom: 0;
-    }
   }
 
   .form-contest__inner--info-user .form-contest__label {
