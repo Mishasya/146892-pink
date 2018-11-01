@@ -4,7 +4,7 @@
 
 .contacts-list__item {
   width: 280px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .contacts-list__title {
@@ -15,6 +15,7 @@
 
 .contacts-list__info {
   display: block;
+  margin: 0;
   margin-bottom: 20px;
   color: $pink;
   font-size: 24px;
@@ -51,7 +52,9 @@
   }
 
   .contacts-list__info {
-    line-height: 32px;
+    margin: 0;
+    margin-bottom: 26px;
+    line-height: 29px;
   }
 }
 
@@ -63,5 +66,9 @@
   .contacts-list__title {
     display: block;
     margin-bottom: 20px;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 15px;
   }
 }

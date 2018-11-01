@@ -9,12 +9,21 @@
   }
 }
 
+/* .main-nav__wrapper {
+  display: flex;
+  align-items: center;
+} */
+
 .main-nav__inner {
   @include wrapper-mobile();
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 65px;
+  min-height: 55px;
+}
+
+.main-nav__list {
+  width: 320px;
 }
 
 .main-nav__trigger {

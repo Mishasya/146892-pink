@@ -2,7 +2,6 @@
   width: 320px;
   padding-top: 16px;
   padding-bottom: 40px;
-  margin: 0 auto;
   background-color: $light-grey;
 }
 
@@ -35,6 +34,15 @@
 
 .gallery-filter__svg {
   fill: $dark-grey-opacity;
+  cursor: pointer;
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+
+  &:active {
+    fill: $pink;
+  }
 }
 
 .gallery-filter__range {
@@ -71,6 +79,7 @@
   height: 14px;
   background-color: $white;
   border-radius: 50%;
+  cursor: pointer;
 
   &:active {
     background-color: $pink;
