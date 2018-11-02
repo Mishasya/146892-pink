@@ -5,12 +5,12 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
 
     <header class="page-header page-header--index">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper page-header__wrapper--opened">
         <h1 class="visually-hidden">Приложение Pink</h1>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
@@ -20,7 +20,7 @@
                 <svg class="logo__header logo__header--tablet" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use></svg>
                 <svg class="logo__header logo__header--mobile" width="74.426px" height="22.859px"><use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use></svg>
               </a>
-              <button class="main-nav__trigger" type="button" aria-label="Главное меню"></button>
+              <button class="main-nav__trigger" type="button" aria-label="Главное меню"><span class="visually-hidden">Главное меню</span></button>
             </div>
 
             <ul class="main-nav__list nav-list">
@@ -122,13 +122,13 @@
           </ul>
 
 
-            <button class="reviews__controls-arrow reviews__controls-arrow--left"></button>
-            <button class="reviews__controls-arrow reviews__controls-arrow--right"></button>
+          <button class="reviews__controls-arrow reviews__controls-arrow--left"><span class="visually-hidden">Предыдущий</span></button>
+          <button class="reviews__controls-arrow reviews__controls-arrow--right"><span class="visually-hidden">Следующий</span></button>
 
           <div class="reviews__controls slider__controls">
-            <button class="slider__toggle slider__toggle--active"></button>
-            <button class="slider__toggle"></button>
-            <button class="slider__toggle"></button>
+            <button class="slider__toggle slider__toggle--active"><span class="visually-hidden">Следующий</span></button>
+            <button class="slider__toggle"><span class="visually-hidden">Следующий</span></button>
+            <button class="slider__toggle"><span class="visually-hidden">Следующий</span></button>
           </div>
         </div>
       </section>
@@ -183,9 +183,9 @@
 
           <div class="price__controls-wrapper">
             <div class="price__controls slider__controls">
-              <button class="slider__toggle"></button>
-              <button class="slider__toggle slider__toggle--active"></button>
-              <button class="slider__toggle"></button>
+              <button class="slider__toggle">Следующий</button>
+              <button class="slider__toggle slider__toggle--active">Следующий</button>
+              <button class="slider__toggle">Следующий</button>
             </div>
           </div>
         </div>

@@ -1,18 +1,6 @@
 .page-header {
   width: 320px;
   background-color: $dark-grey;
-
-  &--no-hand {
-    min-height: 236px;
-    margin-bottom: 0;
-    background: $dark-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
-    background-size: cover;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-size: cover;
-    }
-  }
 }
 
 .page-header__wrapper {
@@ -28,6 +16,51 @@
       url("../img/bg-back-mobile@2x.jpg");
     background-size: 258px auto, cover;
   }
+
+  &--closed {
+    padding-bottom: 262px;
+    background-image: url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-position: 0 436px, 0 262px;
+  }
+
+  &--form {
+    min-height: 236px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: $dark-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+
+  &--photo {
+    min-height: 240px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: $dark-grey url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+.page-header__wrapper--form.page-header__wrapper--closed {
+  padding-bottom: 53px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 250px;
+}
+
+.page-header__wrapper--photo.page-header__wrapper--closed {
+  padding-bottom: 82px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: -19px 254px;
 }
 
 .page-header__title {
@@ -55,6 +88,29 @@
         url("../img/bg-back-tablet@2x.jpg");
       background-size: 700px auto, 1200px auto;
     }
+
+    &--form,
+    &--photo {
+      min-height: 439px;
+      background: $dark-grey url("../img/bg-back-tablet@1x.jpg") no-repeat top;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+        background-size: 1200px auto;
+      }
+    }
+  }
+
+  .page-header__wrapper--form.page-header__wrapper--closed {
+    padding-bottom: 79px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -273px 259px;
+  }
+
+  .page-header__wrapper--photo.page-header__wrapper--closed {
+    padding-bottom: 139px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: -273px 259px;
   }
 
   .page-header__intro {
@@ -65,34 +121,35 @@
     display: flex;
     flex-wrap: wrap;
     width: 660px;
-
-    &--no-hand {
-      min-height: 440px;
-      background: $dark-grey url("../img/bg-back-tablet@1x.jpg") no-repeat top;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-back-tablet@2x.jpg");
-        background-size: 1200px auto;
-      }
-    }
   }
 
   .page-header__title {
     width: 480px;
     font-size: 50px;
     line-height: 60px;
-    padding-bottom: 100px;
 
     &--form {
-      padding-bottom: 41px;
+      padding-top: 41px;
     }
+
+    &--photo {
+      padding-top: 40px;
+    }
+  }
+
+  .page-header__wrapper--closed .page-header__title--photo {
+    padding-top: 296px;
+  }
+
+  .page-header__wrapper--closed .page-header__title--form {
+    padding-top: 296px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     width: 100%;
-    min-height: 853px;
+    min-height: 396px;
     background: transparent;
   }
 
@@ -104,10 +161,6 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
     }
-
-    &--no-hand {
-      min-height: 395px;
-    }
   }
 
   .page-header__title {
@@ -115,11 +168,11 @@
 
     &--photo {
       width: 355px;
-      padding-bottom: 65px;
+      padding-top: 35px;
     }
 
     &--form {
-      padding-bottom: 70px;
+      padding-top: 33px;
     }
   }
 }
