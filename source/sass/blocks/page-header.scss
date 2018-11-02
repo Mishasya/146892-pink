@@ -149,8 +149,13 @@
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     width: 100%;
-    min-height: 396px;
+    min-height: 853px;
     background: transparent;
+
+    &--form,
+    &--photo {
+      min-height: 396px;
+    }
   }
 
   .page-header {
