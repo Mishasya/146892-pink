@@ -3,8 +3,8 @@
 }
 
 .information__slogan {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 41px;
+  padding-bottom: 80px;
   text-align: center;
   background-color: $white;
 }
@@ -12,24 +12,36 @@
 .information__text {
   margin: 0;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 28px;
   font-weight: 300;
 }
 
-.information__text:nth-child(2) {
+.information__br {
+  display: none;
+}
+
+.information__text:nth-child(1) {
   margin-bottom: 30px;
 }
 
 .information__list-wrapper {
   width: 320px;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 287px;
-  background: $light-grey url("../img/iphone-screen-mobile@1x.png") no-repeat center 477px;
+  background-color: $light-grey;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 462px;
 }
 
 @media (max-width: $mobile-width-only) {
   .information__effect {
     display: none;
+  }
+
+  .information__slogan {
+    background-image: linear-gradient(174deg, $white 50%, $light-grey 50%);
+    background-size: 100% 470px;
   }
 }
 
@@ -44,7 +56,8 @@
     position: relative;
     width: 620px;
     margin: 0 auto;
-    z-index: -1;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .information__text {
@@ -68,21 +81,67 @@
   .information__list-wrapper {
     width: 660px;
     padding: 0;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    background: $light-grey url("../img/iphone-screen-3-tablet@1x.png") no-repeat 30px;
+    padding-top: 71px;
+    padding-bottom: 7px;
+    background-color: $light-grey;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png"),
+      url("../img/bg-triangle-white.svg");
+    background-size: auto, 100%;
+    background-position: 20px 0, top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png"),
+        url("../img/bg-triangle-white.svg");
+      background-size: 268px auto, 100%;
+    }
   }
 
   .information__effect {
     @include wrapper-tablet();
     display: flex;
-    padding-top: 57px;
-    padding-bottom: 65px;
+    padding-top: 0;
+    padding-bottom: 27px;
+  }
+
+  .information__text:nth-child(1) {
+    margin-bottom: 1px;
   }
 
   .information__effect-wrapper {
+    position: relative;
     width: 296px;
-    margin-left: auto;
+    padding-left: 310px;
+    padding-top: 97px;
+
+    &::before {
+      content: "24";
+      position: absolute;
+      bottom: 6px;
+      left: 32px;
+      width: 174px;
+      height: 174px;
+      background-color: $white;
+      border-radius: 50%;
+      font-size: 96px;
+      line-height: 163px;
+      font-weight: 700;
+      color: $pink;
+      text-align: center;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 276px;
+      top: 59px;
+      left: 0;
+      background-image: url("../img/icon-editor-diagram-fill.svg"),
+        url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: 21px 56px, bottom;
+      background-size: 200px, 240px 276px;
+    }
   }
 
   .information__title {
@@ -92,23 +151,24 @@
   }
 
   .information__indent {
-    margin: 0;
+    margin: 10px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .information {
-    width: 1200px;
-    background-color: $light-grey;
+    width: 100%;
   }
 
   .information__slogan {
     width: 820px;
+    padding-top: 72px;
+    padding-bottom: 67px;
   }
 
   .information__text {
     font-size: 50px;
-    line-height: 56px;
+    line-height: 57px;
 
     &:last-of-type {
       width: 430px;
@@ -116,20 +176,66 @@
   }
 
   .information__list-wrapper {
-    width: 1200px;
+    width: 100%;
+    padding-top: 0;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: 100%;
+    background-position: left top;
   }
 
   .information__effect {
-    width: 1200px;
+    width: 100%;
+    padding-bottom: 113px;
+    background-color: $light-grey;
+    background-position: 130px 23px;
+    background-size: 300px 345px;
   }
 
   .information__effect-wrapper {
-    @include wrapper-desktop();
-    padding-left: 370px;
+    width: 572px;
+    padding-left: 366px;
+    margin: 0 auto;
+    padding-top: 101px;
+
+    &::before {
+      top: 113px;
+      left: 37px;
+      width: 222px;
+      height: 222px;
+      font-size: 120px;
+      line-height: 207px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 350px;
+      top: 25px;
+      left: 0;
+      background-image: url("../img/icon-editor-diagram-fill.svg"),
+        url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-position: 23px 72px, bottom;
+      background-size: 252px, 300px 350px;
+    }
+  }
+
+  .information__title {
+    display: block;
+    margin-top: 17px;
+    margin-bottom: 21px;
+  }
+
+  .information__indent .information__br {
+    display: inline;
   }
 
   .information__indent {
-    width: 410px;
+    width: 530px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 32px;
   }
 
   .information__indent br {
@@ -138,5 +244,10 @@
 
   .information__title br {
     display: none;
+  }
+
+  .information__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

@@ -3,7 +3,7 @@
   width: 280px;
   background-color: $green;
   color: $white;
-  padding: 18px;
+  padding: 17px;
   border: none;
   border-radius: 2px;
   font-size: 18px;
@@ -68,6 +68,14 @@
     font-size: 18px;
     line-height: 18px;
 
+    @media (min-width: $tablet-width) {
+      width: 261px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 183px;
+    }
+
     &:hover {
       background-color: $pink;
       color: $white;
@@ -88,6 +96,15 @@
     text-transform: none;
     font-size: 18px;
     line-height: 18px;
+    flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 261px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 183px;
+    }
 
     &:hover {
       background-color: transparent;

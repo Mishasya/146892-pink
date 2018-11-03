@@ -6,11 +6,11 @@
 .contacts__wrapper {
   @include wrapper-mobile();
   padding-top: 45px;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
 }
 
 .contacts__intro {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .contacts__text {
@@ -19,7 +19,7 @@
   line-height: 24px;
   font-weight: 300;
 
-  &--margin-bottom {
+  &:first-child {
     margin-bottom: 5px;
   }
 }
@@ -31,20 +31,40 @@
 
   .contacts__wrapper {
     @include wrapper-tablet();
+    padding-top: 47px;
+    padding-bottom: 5px;
+  }
+
+  .contacts__intro {
+    margin-bottom: 45px;
   }
 
   .contacts__text {
     font-size: 40px;
-    line-height: 46px;
+    line-height: 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: 1200px;
+    width: 100%;
+    padding-top: 67px;
   }
 
   .contacts__wrapper {
     @include wrapper-desktop();
+  }
+
+  .contacts__text {
+    font-size: 50px;
+    line-height: 59px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__intro {
+    margin-bottom: 57px;
   }
 }

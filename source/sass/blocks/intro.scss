@@ -1,6 +1,8 @@
 .intro {
   width: 320px;
   background-color: $dark-grey;
+  padding-top: 27px;
+  padding-bottom: 30px;
 }
 
 .intro__wrapper {
@@ -9,8 +11,8 @@
 
 .intro__text {
   margin: 0;
-  margin-top: 20px;
   color: $white;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -18,14 +20,46 @@
   display: none;
 }
 
+.intro__btn {
+  margin-bottom: 30px;
+}
+
+.intro__icon-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.intro__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50px;
+  height: 60px;
+}
+
+.intro__icon-apple {
+  width: 46.21px;
+  height: 56.753px;
+}
+
+.intro__icon-android {
+  width: 42.084px;
+  height: 47.041px;
+}
+
 @media (min-width: $tablet-width) {
   .intro {
-    width: 300px;
-    margin-top: -550px;
+    width: 660px;
     background-color: transparent;
   }
 
   .intro__wrapper {
+    width: 300px;
     margin: 0 20px;
     text-align: center;
   }
@@ -34,15 +68,55 @@
     display: block;
     width: 200px;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     font-weight: 300;
     color: $white;
     margin: 0 auto;
+    margin-bottom: 31px;
+  }
+
+  .intro__btn {
+    width: 294px;
+    margin-bottom: 41px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .intro__icon-inner {
+    margin-bottom: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    margin-left: 101px;
+    width: 940px;
+    margin: 0 auto;
+    margin-top: -659px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 17px bottom;
+  }
+
+  .intro__wrapper {
+    margin-left: 0;
+  }
+
+  .intro__slogan {
+    width: 300px;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 52px;
+  }
+
+  .intro__btn {
+    font-size: 21px;
+    margin-bottom: 63px;
+  }
+
+  .intro__icon-inner {
+    margin-bottom: 55px;
   }
 }

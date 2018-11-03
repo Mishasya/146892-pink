@@ -10,7 +10,8 @@
 
   &--photo {
     width: 245px;
-    padding: 45px 0;
+    padding-top: 45px;
+    padding-bottom: 49px;
   }
 }
 
@@ -29,6 +30,16 @@
 @media (min-width: $tablet-width) {
   .promo {
     @include wrapper-tablet();
+
+    &--photo {
+      padding-top: 92px;
+      padding-bottom: 75px;
+    }
+
+    &--form {
+      padding-top: 92px;
+      padding-bottom: 71px;
+    }
   }
 
   .promo__text {
@@ -40,11 +51,23 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    @include wrapper-desktop();
+    width: 100%;
+
+    &--photo {
+      padding-bottom: 88px;
+    }
+
+    &--form {
+      padding-top: 91px;
+      padding-bottom: 85px;
+    }
   }
 
   .promo__text {
     width: 620px;
-    padding: 90px 0;
+  }
+
+  .promo--form .promo__text {
+    width: 804px;
   }
 }
