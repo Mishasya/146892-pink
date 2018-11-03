@@ -12,7 +12,7 @@
 .price__table {
   width: 838px;
   margin-left: -257px;
-  border-collapse: collapse;
+  border-spacing: 0;
   margin-bottom: 42px;
 }
 
@@ -22,7 +22,7 @@
   left: 228px;
   width: 31px;
   height: 21px;
-  fill: $light-green;
+  fill: #3dc644;
 }
 
 .price__svg-no {
@@ -31,7 +31,6 @@
   left: 230px;
   width: 27px;
   height: 26px;
-  fill: $red;
 }
 
 .price__table-title {

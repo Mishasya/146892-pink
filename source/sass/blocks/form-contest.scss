@@ -452,10 +452,11 @@
   }
 
   .form-contest__fieldset-wrapper--order-3 .form-contest__part {
-    width: 876px;
+    width: 880px;
     padding-right: 0;
     padding-bottom: 12px;
     padding-top: 46px;
+    padding-left: 55px;
   }
 
   .form-contest__item--radio {
@@ -469,15 +470,15 @@
   }
 
   .form-contest__check {
-    width: 251px;
-    margin-right: 53px;
+    width: 258px;
+    margin-right: 52px;
 
     &:nth-child(2) {
-      margin-right: 36px;
+      margin-right: 32px;
     }
 
     &:last-child {
-      margin-right: 17px;
+      margin-right: 8px;
     }
   }
 
