@@ -19,15 +19,15 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
+}
 
-  &:hover,
-  &:focus {
-    color: $pink;
-  }
+.nav-list__link[href]:hover,
+.nav-list__link[href]:focus {
+  color: $pink;
+}
 
-  &:active {
-    color: $pink-opacity;
-  }
+.nav-list__link[href]:active {
+  color: $pink-opacity;
 }
 
 @media (min-width: $tablet-width) {
