@@ -1,5 +1,6 @@
 .page-header {
   width: 320px;
+  margin: 0 auto;
   background-color: $dark-grey;
 }
 
@@ -121,6 +122,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 660px;
+    margin: 0 auto;
   }
 
   .page-header__title {

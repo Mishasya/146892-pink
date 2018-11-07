@@ -99,11 +99,18 @@
   }
 }
 
+.main-nav--nojs {
+  position: relative;
+  width: 320px;
+  min-height: 65px;
+  background-color: $dark-grey;
+}
+
 .main-nav--nojs .main-nav__trigger {
   display: none;
 }
 
-.main-nav--nojs .nav-list__list {
+.main-nav--nojs .main-nav__list {
   display: block;
 }
 
@@ -146,5 +153,9 @@
 
   .main-nav__trigger {
     display: none;
+  }
+
+  .main-nav--nojs {
+    background-color: $black-opacity;
   }
 }

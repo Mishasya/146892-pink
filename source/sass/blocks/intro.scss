@@ -98,6 +98,11 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 17px bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
   }
 
   .intro__wrapper {
