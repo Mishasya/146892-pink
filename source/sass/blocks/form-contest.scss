@@ -72,6 +72,7 @@
 
 .form-contest__title {
   width: 220px;
+  margin: 0 auto;
   margin-bottom: 39px;
   line-height: 18px;
   color: $pink;
@@ -227,7 +228,7 @@
 
     &--order-2 {
       order: 2;
-      padding-top: 0;
+      padding-top: 31px;
       padding-bottom: 24px;
       margin-bottom: 52px;
     }
@@ -235,16 +236,18 @@
     &--order-4 {
       margin-bottom: 67px;
       order: 4;
-      padding-top: 22px;
+      padding-top: 31px;
     }
   }
 
   .form-contest__part--order-2 .form-contest__title {
-    margin-bottom: 32px;
+    margin-bottom: 0;
+    margin-left: 125px;
   }
 
   .form-contest__part--order-4 .form-contest__title {
-    margin-bottom: 9px;
+    margin-bottom: 0;
+    margin-left: 131px;
   }
 
 
@@ -327,7 +330,8 @@
   }
 
   .form-contest__fieldset-wrapper--order-1 .form-contest__title {
-    margin-bottom: -3px;
+    margin-bottom: 0;
+    margin-left: 63px;
   }
 
   .form-contest__fieldset-wrapper--order-1 .form-contest__part {
@@ -341,11 +345,13 @@
   }
 
   .form-contest__fieldset-wrapper--order-3 .form-contest__title {
-    margin-bottom: -7px;
+    margin-bottom: 0;
+    margin-left: 37px;
   }
 
   .form-contest__fieldset-wrapper--order-3 .form-contest__part {
     padding-bottom: 52px;
+    padding-top: 38px;
   }
 
   .form-contest__submit-wrapper--order-5 {
